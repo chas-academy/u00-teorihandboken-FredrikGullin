@@ -1,5 +1,5 @@
 # Teorihandboken - UX och design (UD)
-Studerande: Förnamn Efternamn
+Studerande: Fredrik Gullin
 
 ## UD 1.1 Grafik och design för webbsidor
 Beskriv rubriken här

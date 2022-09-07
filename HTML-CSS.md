@@ -1,5 +1,5 @@
 # Teorihandboken - HTML & CSS (HC)
-Studerande: Förnamn Efternamn
+Studerande: Fredrik Gullin
 
 ## HC 1.1 HTML & CSS
 Beskriv rubriken här

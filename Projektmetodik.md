@@ -1,5 +1,5 @@
 # Teorihandboken - Projektmetodik (PJ)
-Studerande: Förnamn Efternamn
+Studerande: Fredrik Gullin
 
 ## PJ 1.1 Agila metoder (Scrum, Kanban, Extreme Programming)
 Beskriv rubriken nedan här

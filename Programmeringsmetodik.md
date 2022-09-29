@@ -25,6 +25,25 @@ Ett distribuerat versionshanteringssystem (*DVCS*) är ett system där användar
 
 Med ett *DVCS* kan användarna, genom att ha flera fjärrförvar, samarbeta med flera personer på olika sätt inom samma projekt, och gör det möjligt att ha flera olika arbetsflöden, vilket inte är möjligt med CVCS.
 
+**Git**
+Git är ett DVCS som kom till världen 2005 och uppfyller sina ursprungliga mål om att vara lättanvänt, förbluffande snabbt, väldigt effektivt med stora projekt och ett otroligt bra system för icke-linjär utveckling.
+
+**Snapshots**
+Konceptuellt sparar andra versionshanteringssystem information som en lista av filändringar, det vill säga en uppsättning filer och ändringarna som gjorts i varje fil över tid (även kallat deltabaserad versionshantering).
+
+Git skiljer sig från övriga versionshanteringssystem och lagrar sin data som en serie ögonblicksbilder (snapshots) av ett miniatyrfilsystem. Varje gång du sparar en version eller sparar tillståndet i ditt projekt i Git så tas en bild över hur alla dina filer ser ut för ögonblicket och en referens till varje ögonblicksbild sparas. För att effektivisera sparas inte en fil på nytt ifall den inte har ändrats, utan endast en länk till föregående identiska fil som redan lagrats. Man kan tänka på data som Git hanterar som en ström av ögonblicksbilder.
+
+De flesta operationerna i git görs lokalt och behöver endast lokala filer och resurser för att fungera (till skillnad från centraliserade versionshanteringssystem där de flesta operationer är beroende av nätverksuppkoppling för att fungera, vilket även leder till fördröjning). Då hela historiken av ett projekt sparas lokalt på användarens dator upplevs arbete i Git som mycket snabbt och effektivt. Då nästan all data sparas lokalt kan man i praktiken göra det mesta även utan internetuppkoppling.
+
+**Integritet**
+Allt i Git beräknas som en checksumma innan det lagras och sedan refererar men till den checksumma. Detta innebär att det är omöjligt att ändra innehållet i någon fil eller katalog utan att Git känner till det. Denna funktion är inbyggd i Git på de lägsta nivåerna och är fundamentalt för dess filosofi. Du kan inte tappa information på vägen eller få en korrupt fil utan att Git kan detektera det.
+
+Mekanismen som Git använder för att beräkna checksumman kallas för en SHA-1 hash. Det är en fyrtio lång teckensträng som består av hexadecimala tecken (0-9 och a -f) och beräknas baserat på innehållet i en fil eller katalogstruktur i Git.
+
+När man utför en operation i Git resulterar detta alltid i att något läggs till i databasen. Det är svårt att få systemet att göra någon som inte kan ångras i efterhand eller att data på något sätt går förlorad. Så länge en ögonblicksbild har sparats kan man experimentera fritt utan rädsla att förstöra något.
+
+Källa: https://git-scm.com/book/sv/v2/Kom-ig%C3%A5ng-Om-versionshantering
+
 ## PG 1.2 Benchmarking
 Beskriv rubriken här
 

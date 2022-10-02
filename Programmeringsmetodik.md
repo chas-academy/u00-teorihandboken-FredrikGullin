@@ -42,7 +42,11 @@ Mekanismen som Git använder för att beräkna checksumman kallas för en SHA-1 
 
 När man utför en operation i Git resulterar detta alltid i att något läggs till i databasen. Det är svårt att få systemet att göra någon som inte kan ångras i efterhand eller att data på något sätt går förlorad. Så länge en ögonblicksbild har sparats kan man experimentera fritt utan rädsla att förstöra något.
 
-Källa: https://git-scm.com/book/sv/v2/Kom-ig%C3%A5ng-Om-versionshantering
+Git kan användas oftast med en linux-terminal (eller med Git Bash för Windows) där man kan ange kommandon för att få Git att utföra det man önskar. Det är även möjligt att installera en extension i Visual Code som ger en del genvägar för att få Git att utföra vissa operationer.
+
+För att se några exempel på grundläggande kommandon i git terminalen kan man besöka denna sida: [Atlassian - Git commands](https://www.atlassian.com/git/glossary).
+
+_Källa: https://git-scm.com/book/sv/v2/Kom-ig%C3%A5ng-Om-versionshantering_
 
 ## PG 1.2 Benchmarking
 Beskriv rubriken här

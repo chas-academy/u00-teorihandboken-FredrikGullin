@@ -137,7 +137,50 @@ Detta var en kort beskrivning av HTML och CSS. För att läsa mer om detta besö
 _Källa 5: https://www.exsitec.se/blogg/vad-ar-css_
 
 ## HC 1.2 Responsiv design
-Beskriv rubriken här
+Innan konceptet för responsiv design var webbsidor byggda för att passa en specifik skärmstorlek. Om användaren hade en större eller mindre skärm än vad designen avsåg kunde detta leda till en rad oönskade resultat, som till exempel att användaren var tvungen att scrolla sig igenom sidan på ett onaturligt sätt för att ta del av innehållet, eller överdrivet långa textremsor. Med tiden utvecklades ett större antal skärmar med olika storlekar och med det utvecklades även konceptet för responsiv design.
+
+Responsiv design är en metod som gör webbsidor responsiva så de fungerar på olika skärmstorlekar. Detta innebär att sidans layout förändras och anpassas efter användarens skärmstorlek, bredd och upplösning med mera. Detta koncept förändrade sättet vi utvecklar hemsidor med anpassningar för ett internet med en mängd olika enheter.
+
+Innan responsiv design existerade i sin nuvarande form har utvecklare försökt lösa problem med huruvida webbsidor kan anpassas till olika skärmstorlekar på olika sätt. HTML är generellt responsivt och texten på en webbsida kommer anpassas efter en enhets skärmstorlek. Detta kallas ”liquid layout”. Problemet med denna layout är att webbsidan skulle se ihoptryckt ut på en mindre skärm eller att textraderna skulle bli väldigt långa och därav svårlästa.
+
+För att komma runt detta problem försökte utvecklare ett nytt tillvägagångssätt genom att ge sidans element en bestämd pixelbredd. Detta kallas ”fixed width layout”. Problemet med detta tillvägagångssätt är att användaren behöver scrolla horisontellt för att se hela innehållet när skärmbredden är mindre än själva websidan, samt att det uppstår flera tomrum på sidan när man använder en större skärm.
+
+När det mobila internet blev en verklighet i samband med att mobiltelefonin utvecklades brukade företag bygga två webbsidor, en anpassad för datorer och en anpassad för mobiltelefoner. Sidorna som var anpassade för mobiltelefoner var dock ofta väldigt ofta en nedbantad version av hemsidan, vilket ledde till frustration över att mobilanvändare inte hade tillgång till all information som fanns på företagets datoranpassade hemsida. Detta innebar även att man behövde uppdatera och underhålla två sidor istället för en.
+
+Termen ”responsiv design” etablerades av Ethan Marcotte under 2010 och beskrev ett tillvägagångssätt som kombinerade 3 olika tekniker. Ethan förespråkade användningen av fluid grids, fluid images och media queries för att komma runt problemen med responsivitet.
+
+Media queries
+Användandet av media queries var en av nyckelfaktorerna till att responsiv design blev en vedertagen standard när det kommer till webbutveckling.
+
+En media query fungerar på följande sätt:
+
+Utvecklaren anger ett villkor som till exempel minimum bredd för en skärm. Om villkoret är uppfyllt ska ett antal CSS regler tillämpas. Reglerna anges direkt i själva media queryn.
+
+**Till exempel:**
+
+@media screen and (min-width: 800px){
+	.container {
+		margin: 1em 2em;
+	}
+}
+
+I detta exempel är villkoret att minimum bredden för en skärm ska vara 800 pixlar ska vara uppfyllt för att CSS reglerna för klassen container ska vara: margin: _1em 2em_.
+
+Om skärmbredden är mindre än 800 pixlar så är villkoret ej uppfyllt och därmed gäller de ursprungliga reglerna för klassen container.
+
+Media queries läggs till i slutet av CSS koden. Detta då koden läses uppifrån och ner. Om en media query skrivs mitt i koden kan den bli åsidosatt av senare regler i dokumentet och därför inte fungera. Man kan ha flera media queries för att lägga till flera brytpunkter för att anpassa webbsidan olika regler för flera olika skärmstorlekar.
+
+Responsiviteten i webbsidor bygger inte enbart på brytpunkter och media queries, de använder även på responsiva designmetoder som till exempel multiple-column layout, flexbox och grid.
+
+En grid är generellt responsiv för att underlätta då man redan gjort antagandet att utvecklare vill använda responsiva metoder när de skapar webbsidor.
+
+Multiple-column layout är den äldsta av dessa metoder. Utvecklaren anger ett antal kolumner (column-count) som innehållet på sidan ska delas upp i. Webbläsaren kommer därefter räkna ut storleken på dessa i förhållande till användarens skärm.
+
+I en flexbox kommer flex-föremål initialt krympa och distribuera utrymme mellan varandra enligt det utrymme som finns tillgängligt i själva flex-boxen. Man kan styra hur föremålen beter sig i flex-boxen när de får mer, eller mindre, utrymme runt omkring sig genom att ändra värden för flex-grow och flex-shrink.
+
+Utöver dessa metoder kan man även använda responsiva enheter som procent (%), em, rem, vh och vw för att göra olika element (boxar, text och bilder) responsiva.
+
+_Källa:_ https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
 
 ## HC 1.3 Tillgänglighet inom webb
 Beskriv rubriken nedan här

@@ -37,15 +37,15 @@ _Metadata kan se ut på följande sätt i ett HTML-dokument:_
 
 I ovanstående exempel kan en sökmotor förstå att webbsidan innehåller ”Free web tutorials” med nyckelorden HTML, CSS och Javascript samt att författaren av sidan heter Fredrik Gullin. Därefter jämför sökmotorn sidans metadata mot en användares sökning och om dessa matchar varandra förstår sökmotorn att det är relevant att presentera sidan som ett sökresultat.
 
-_Källa 1: https://www.exsitec.se/blogg/vad-ar-html_
-_Källa 2: Föreläsning - Optimering / Validering av Sebastian Lindgren, Chas Academy den 29 september 2022_
+_Källa 1:_ https://www.exsitec.se/blogg/vad-ar-html
+_Källa 2:_ Föreläsning - Optimering / Validering av Sebastian Lindgren, Chas Academy den 29 september 2022
 
 **Markup och taggar**
 HTML använder ”markup” för att märka upp text, bilder och annat innehåll för att presentera detta i en webbläsare. HTML markup görs med särskilda element som till exempel <head>, <title>, <body>, <header>, <footer>, <article>, <section>, <p>, och <div> med flera.
 
 Ett HTML-element urskiljer sig från övrig text i ett dokument genom att använda taggar, ”<” och ”>”. Ett element kan anges med både små och stora bokstäver eller till och med en blandning av dessa. Det är dock rekommenderat att använda små bokstäver.
 
-_Källa 3: https://developer.mozilla.org/en-US/docs/Web/HTML_
+_Källa 3:_ https://developer.mozilla.org/en-US/docs/Web/HTML
 
 
 **CSS**
@@ -55,7 +55,7 @@ När det gäller webbutveckling används CSS för att lägga till styling och la
 
 CSS är ett av webbens huvudsakliga språk och är en standard för webbläsare i enlighet med [W3C specifications](https://www.w3.org/Style/CSS/#specs). 
 
-_Källa 4: https://developer.mozilla.org/en-US/docs/Web/CSS_
+_Källa 4:_ https://developer.mozilla.org/en-US/docs/Web/CSS
 
 
 **Inline CSS**
@@ -134,7 +134,7 @@ På det här sättet har vi endast ändrat färg på den paragraf som hör till 
 
 Detta var en kort beskrivning av HTML och CSS. För att läsa mer om detta besök [MDN](https://developer.mozilla.org/en-US/).
 
-_Källa 5: https://www.exsitec.se/blogg/vad-ar-css_
+_Källa 5:_ https://www.exsitec.se/blogg/vad-ar-css
 
 ## HC 1.2 Responsiv design
 Innan konceptet för responsiv design var webbsidor byggda för att passa en specifik skärmstorlek. Om användaren hade en större eller mindre skärm än vad designen avsåg kunde detta leda till en rad oönskade resultat, som till exempel att användaren var tvungen att scrolla sig igenom sidan på ett onaturligt sätt för att ta del av innehållet, eller överdrivet långa textremsor. Med tiden utvecklades ett större antal skärmar med olika storlekar och med det utvecklades även konceptet för responsiv design.
@@ -183,7 +183,31 @@ Utöver dessa metoder kan man även använda responsiva enheter som procent (%),
 _Källa:_ https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
 
 ## HC 1.3 Tillgänglighet inom webb
-Beskriv rubriken nedan här
+Tillgänglighet inom webbutveckling syftar till att tillgängliggöra till exempel en webbsida, en applikation eller ett system för personer med olika grad av funktionsnedsättning. Detta är en viktig del av utformning av en webbsida och bör beaktas under hela utvecklingsprocessen.
+
+Tillgänglighetsanpassade webbsidor presenterar information genom flera sensoriska kanaler, så som ljud och syn, och de möjliggör  ytterligare sätt för webbplatsnavigering och interaktivitet utöver det typiska ”peka och klicka” gränssnittet, som tangentbordsbaserad kontroll och röstbaserad navigering. Kombinationen av ett multisensoriskt tillvägagångssätt med mångsidig interaktivitet tillåter personer med funktionsnedsättning att ta del av samma information som icke-funktionsnedsatta användare.
+
+Genom att göra din webbsida tillgänglighetsanpassad ser du till att alla dina potentiella besökare, inklusive personer med funktionsnedsättning, har en anständig användarupplevelse och har tillgång till all information som presenteras på sidan. Detta förbättrar även webbsidans användbarhet för alla användare.
+
+När man skapar digitalt innehåll som till exempel webbsidor bör man överväga följande riktlinjer:
+
+    * Förlita dig inte enbart på kontrast och färger som det enda sättet att navigera sidan
+    * Bilder bör ha en ”alt text” i HTML-koden som beskriver vad bilden föreställer
+    * Funktionalitet bör vara tillgänglig genom både mus och tangentbord och även vara ”taggad” för att fungera med röstbaserade styrsystem
+    * Inkludera text för ljudet på podcasts eller videor
+    * Webbsidan bör ha en funktion för att hoppa över avsnitt
+    * Webbsidan ska uppfylla riktlinjerna i WCAG 2.1 nivå AA
+    * Övervägg att testa din webbsidas tillgänglighet med ett verktyg
+
+WCAG står för ”Web Content Accessability Guidelines” och är en internationellt etablerad och rekommenderad standard för tillgänglighetsanpassning inom webbutveckling. Standarden är framtagen av World Wide Web Consortium (W3C) och sammanställer kunskaper från ett stort antal användare och experter.
+
+Den 23 september 2018 trädde Webbtillgänglighetsdirektivet i kraft i Sverige och alla EU-länder. Lagen omfattar hela den offentliga sektorn samt statliga och kommunala bolag som uppfyller vissa krav. Lagen innebär att webbplatser, extranät, intranät, dokument och appar ska uppfylla kraven på tillgänglighet i EN301549.
+
+_Källor:_
+
+https://www.usability.gov/what-and-why/accessibility.html
+https://webbriktlinjer.se/lagkrav/folj-standarder-tillganglighet/
+https://www.funka.com/design-for-alla/lagar-och-regler/
 
 ## HC 1.4 Aktuella webbstandarder (gällande och kommande standarder)
 Beskriv rubriken nedan här

@@ -36,7 +36,7 @@ Git skiljer sig från övriga versionshanteringssystem och lagrar sin data som e
 De flesta operationerna i git görs lokalt och behöver endast lokala filer och resurser för att fungera (till skillnad från centraliserade versionshanteringssystem där de flesta operationer är beroende av nätverksuppkoppling för att fungera, vilket även leder till fördröjning). Då hela historiken av ett projekt sparas lokalt på användarens dator upplevs arbete i Git som mycket snabbt och effektivt. Då nästan all data sparas lokalt kan man i praktiken göra det mesta även utan internetuppkoppling.
 
 **Integritet**
-Allt i Git beräknas som en checksumma innan det lagras och sedan refererar men till den checksumma. Detta innebär att det är omöjligt att ändra innehållet i någon fil eller katalog utan att Git känner till det. Denna funktion är inbyggd i Git på de lägsta nivåerna och är fundamentalt för dess filosofi. Du kan inte tappa information på vägen eller få en korrupt fil utan att Git kan detektera det.
+Allt i Git beräknas som en _checksumma_ innan det lagras och sedan refererar men till den checksumma. Detta innebär att det är omöjligt att ändra innehållet i någon fil eller katalog utan att Git känner till det. Denna funktion är inbyggd i Git på de lägsta nivåerna och är fundamentalt för dess filosofi. Du kan inte tappa information på vägen eller få en korrupt fil utan att Git kan detektera det.
 
 Mekanismen som Git använder för att beräkna checksumman kallas för en SHA-1 hash. Det är en fyrtio lång teckensträng som består av hexadecimala tecken (0-9 och a -f) och beräknas baserat på innehållet i en fil eller katalogstruktur i Git.
 

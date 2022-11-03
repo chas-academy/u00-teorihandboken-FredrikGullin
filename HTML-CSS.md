@@ -189,7 +189,7 @@ Tillgänglighetsanpassade webbsidor presenterar information genom flera sensoris
 
 Genom att göra din webbsida tillgänglighetsanpassad ser du till att alla dina potentiella besökare, inklusive personer med funktionsnedsättning, har en anständig användarupplevelse och har tillgång till all information som presenteras på sidan. Detta förbättrar även webbsidans användbarhet för alla användare.
 
-När man skapar digitalt innehåll som till exempel webbsidor bör man överväga följande riktlinjer:
+**När man skapar digitalt innehåll som till exempel webbsidor bör man överväga följande riktlinjer:**
 
     * Förlita dig inte enbart på kontrast och färger som det enda sättet att navigera sidan
     * Bilder bör ha en ”alt text” i HTML-koden som beskriver vad bilden föreställer
@@ -210,8 +210,45 @@ https://webbriktlinjer.se/lagkrav/folj-standarder-tillganglighet/
 https://www.funka.com/design-for-alla/lagar-och-regler/
 
 ## HC 1.4 Aktuella webbstandarder (gällande och kommande standarder)
-Beskriv rubriken nedan här
+Webbstandarder kan ses som gängse rekommendationer från World Wide Web Consortium (W3C) med andra standardiseringsorgan och beskriver hur webbaserat innehåll ska skapas, presenteras och tolkas. Standarder för detta har funnits sedan webben började utvecklas men har under senare år blivit ett vedertaget begrepp och uppnått ett brett stöd i de större webbläsarna.
 
+Genom att följa en webbstandard när man utvecklar en webbplats så kan man vara mer säker på att koden även kommer fungera i kommande webbläsare. Standarden avser även att underlätta för användare som är beroende av olika verktyg så som skärmläsarprogram och punktskriftshjälpmedel.
+
+Utöver detta finns ett flertal fördelar med att följa rekommenderade webbstandarder när man utvecklar en webbplats. Man kan exempelvis minska kostnader för utveckling och förvaltning av webbplatsen då det går snabbare att sätta sig in i hur en webbplats är uppbyggd och fungerar om den följer riktlinjerna i allmänt vedertagna standarder, speciellt om det är ett större projekt med ett flertal utvecklare i ett team. Genom att till exempel separera webbplatsens innehåll och presentationen av innehållet blir ändring av utseendet av webbplatsen enklare. Sidans svars- och laddningstiden blir snabbare då filstorleken enligt standard för optimering minskar.
+
+HTML5 blev, efter flera års arbete, en ”W3C recommendation” i oktober 2014. Det innebär att specifikationen är en färdig webbstandard. HTML5 är den gällande standarden som utvecklas kontinuerligt och stöds redan av alla moderna webbläsare och är även bakåtkompatibel med äldre versioner.
+
+När man utvecklar en webbplats bör man även anpassa sidan till tidigare versioner, men till en viss gräns. I första hand testar man sidan mot de senaste versionerna av webbläsare. Detta då webbläsare utvecklas snabbt och de flesta uppdateras automatiskt. Tillverkarna blir dock allt bättre på att följa standarder men överväg att se till att sidorna även fungerar på lite äldre versioner.
+
+Utvecklare har ingen skyldighet att anpassa webbplatsen efter webbläsare som grovt avviker från standarden, som till exempel flera år gamla webbläsare.
+
+**Rekommenderad standard**
+    * Använd HTML5. HTML version 5 är den senaste versionen och har bra stöd i de flesta verktyg.
+    * Använd inte XHTML om det inte finns synnerliga skäl till detta.
+
+För att kontrollera om sidan i fråga följer den standard man valt för uppmärkningskoden kan man använda W3C:s valideringsverktyg (http://validator.w3.org).
+
+**Kommande standarder**
+HTML5 blev som sagt en standard i oktober 2014 och har sedan dess utvecklats kontinuerligt av ”the whatWG community” som också har bekräftat att HTML6 är på väg. Detta är dock en process som kommer ske över tid och allt släpps inte på en gång.
+
+**Man antar att HTML6 kommer innehålla följande funktioner:**
+
+    * Express tags – Taggar som är mer semantiskt korrekta som <logo> för logga, <sidebar> för en sidebar med mera, istället för att använda <div class=””>.
+    * Native Modals Support - <dialog> elementet är på väg med HTML6. Kan jämföras med JavaScript-drivna modala fönster.
+    * Freedom to Resize Image – Möjligvis en ny tag <srcset> vilket i teorin skulle möjliggöra för browsers att välja mellan flera bilder för bästa resultat på olika skärmar / webbläsare.
+    * HTML6 Dedicated Libraries – Introducerar bibliotek som sparas i cach-minnet vilket förbättrar upplevelsen för både utvecklare och användare.
+    * Annotation for images and videos – Möjliggör tolkning av bilder och videos.
+    * Authentication enhancement – Användning av ”embedded keys” istället för cookies etc.
+    * Customized Menus in HTML6 – En meny tag som kan hantera interaktivitet på ett bättre sätt än listor.
+    * HTML6 Integrated Camera – Bättre stöd för användning av kameran på exempelvis en mobiltelefon.
+    * Good Microformats – Standarder som är kapabla att definiera generell data för att förbättra sökbarheten.
+
+Enligt whatWGs blogg är detta vad som framgår av användarnas önskemål. Vad som slutligen kommer finnas med i HTML6 återstår att se.
+
+_Källor:_
+https://www.happiness.se/artiklar/vad-ar-webbstandarder
+https://webbriktlinjer.se/riktlinjer/81-utveckla-webbplatsen-enligt-en-standard-snarare-an-for-en-webblasare/
+https://www.positronx.io/html6-is-coming-here-is-a-sneak-peek/
 ## HC 1.5 CSS Pre-processorer (ex SASS/LESS)
 Beskriv rubriken nedan här
 

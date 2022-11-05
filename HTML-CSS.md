@@ -249,8 +249,103 @@ _Källor:_
 https://www.happiness.se/artiklar/vad-ar-webbstandarder
 https://webbriktlinjer.se/riktlinjer/81-utveckla-webbplatsen-enligt-en-standard-snarare-an-for-en-webblasare/
 https://www.positronx.io/html6-is-coming-here-is-a-sneak-peek/
+
 ## HC 1.5 CSS Pre-processorer (ex SASS/LESS)
-Beskriv rubriken nedan här
+Inom datavetenskapen är en pre-processor (eller en pre-compiler) ett program som processar input data för att ge en output som används som input data för ett annat program.
+
+Sass (Syntactically Awesome Style Sheets) är en kraftfull pre-processor som förenklar arbetet med CSS (Cascading Style Sheets). Sass möjliggör och förenklar ett flertal funktioner som variabler, nesting och moduler med mera, som inte finn (eller är krävande) i CSS. Utöver Sass finns ytterligare två viktiga ”extensions” för CSS och det är Stylus och LESS (Leaner Style Sheets).
+
+Sass kan hjälpa till med att få en mer strukturerad och lättläst kod där man undviker att upprepa sig själv och är även kompatibelt med alla versioner av CSS. För att använda Sass behöver an skapa en separat fil med .scss eller .sass som man arbetar och skriver sin kod i. Därefter hjälper Sass till med att sammanställa koden i Sass-filen till en CSS fil. Webbläsaren kommer endast läsa in sammanställningen i CSS filen när den ska presentera webbsidans innehåll.
+
+Sass hjälper även till med att automatiskt se till att ens CSS fil fungerar med alla typer av standards för webbläsare.
+
+**Övriga fördelar med att använda Sass:**
+
+    • Ökar effektiviteten – Med Sass behöver man inte skriva lika många rader kod och är därför mer effektivt än vanlig CSS.
+    • Snabb sammanställning – Sass sammanställer din kod i en separat CSS fil som webbläsaren använder för att presentera innehållet på webbsidan.
+    • Stor community – Sass har en enorm användarbas och ett stort antal aktiva utvecklare.
+    • Starkt framework – Sass använder Compass (repo för Sass) för ”mixins” samt återkommande uppdateringar och long time support.
+
+När man arbetar i Sass kan man skriva sin kod på flera sätt. Detta då Sass kan hantera .scss, .sass och vanlig CSS.
+
+**SCSS (nytt)** kan beskrivas som ett ”superset” av CSS vilket betyder att Sass innehåller alla funktioner som CSS erbjuder. Om man är van att arbeta med CSS är detta ett enkelt sätt att lära sig Sass.
+
+**Intented Syntax (gammalt)** implementeras på ett style sheet med en .sass fil. Om man jämför detta med .scss så har ”Intented syntax” en bredare publik då denna hjälper utvecklaren att snabbt och kortfattat skriva en större mängd kod.
+
+**Funktionalitet**
+Sass innehåller ett flertal funktioner och förenklingar som jag tänkte lyfta fram i kommande stycke.
+
+**Variabler** – Sass förenklar användningen av variabler då detta kan upplevas som tradigt i CSS.
+
+En variabel i Sass kan deklareras med $ (som t. ex. $myColor: red;). Nu har vi skapat variabeln ”myColor” och tilldelat denna värdet ”röd”. Därefter kan man enkelt använda denna på följande sätt:
+
+body{
+    color: $myColor;
+}
+
+**Nesting** – kan användas i Sass för att strukturera och korta ner ens kod i förhållande till ren CSS-kod. Strukturen man får av Sass gör även koden mer lättläst och man kan undvika att upprepa sig själv.
+
+Exempel Sass:
+
+.myDiv{
+    background-color: $myColor;
+    img{
+        width: 300px;
+    }
+}
+
+I koden ovan hanterar jag klassen ”myDiv” och även alla bild-element inom klassen på samma gång. I ren CSS hade detta sett ut på följande sätt:
+
+.myDiv{
+    background-color: var(--myColor);
+}
+.myDiv img{
+    width: 300px;
+}
+
+**Partials** – är en av Sass mest kraftfulla funktioner som  möjliggör att dela upp ens kod i flera underdelade style sheets som kan länkas ihop. Detta gör det lättare att strukturera koden då man kan ha ett style sheet för header, ett style sheet för ”hero section” och ett style sheet för ”contact section”, istället för att ha all kod i samma fil. Det blir därav mycket enklare att hitta i koden. Framförallt om man arbetar i ett större projekt. Underdelade style sheets namnges med understräck (_exempel.scss). På detta sätt förstår Sass att detta är ett underdelat style sheet som kan länkas in i sammanställningen.
+
+**Mixins** – är en funktion som syftar till att minska upprepningar. Märker man att man upprepar ett block med kod kan man enkelt göra detta till en ”mixin” som man kan anropa istället för att upprepa kodblocket.
+
+Låt oss till exempel anta att vi återkommande använder följande block:
+
+.myDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+Så kan man skapa en ”mixin” med passande namn och anropa detta istället för att upprepa koden ovan in i absurdum:
+
+@mixin flexCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+Koden ovan skapar en mixin som jag döpt till flexCenter (namnet är passande då detta är vad koden jag stoppat in gör). För att anropa min mixin funktion gör man på följande sätt:
+
+.myDiv{
+    @include flexCenter();
+}
+
+På detta sätt slipper jag upprepa koden i föregående exempel och kan korta ner min kod betydligt.
+
+Operators – Sass kan även använda operatorer som + - * /. Detta kan underlätta på många sätt som till exempel när man arbetar med proportioner av olika element.
+
+**Sass:**
+
+width: 500px / 900px * 100%;
+
+**CSS:**
+
+width: 55.55555556%;
+
+Sass hjälper i detta fall till med matematiken.
+
+_Källor:_
+https://techaffinity.com/blog/what-is-sass-css-preprocessor/
+https://www.youtube.com/watch?v=Zz6eOVaaelI
 
 ## HC 1.6 Optimering och validering av HTML & CSS
 Beskriv rubriken nedan här

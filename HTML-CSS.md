@@ -8,7 +8,7 @@ HTML står för HyperText Markup Language och är en av webbens grundläggande b
 
 HTML-kod används endast för att ge struktur och saknar möjlighet att utföra kommandon. HTML är således ett märkspråk och inte ett programmeringsspråk. HTML är en sidas struktur och CSS är det man använder för att designa själva sidan. Javascript är det som används för att ge sidan olika typer av funktionalitet.
 
-För att beskriva relationen mellan struktur, design skulle man till exempel effektivt kunna göra alla rubriker på en webbsida röda, märka upp dessa med HTML i sidans struktur för att senare kunna arbeta med och ändra just sidans rubriker i CSS.
+För att beskriva relationen mellan struktur och design skulle man till exempel effektivt kunna göra alla rubriker på en webbsida röda, märka upp dessa med HTML i sidans struktur för att senare kunna arbeta med, och ändra just sidans rubriker i CSS.
 
 _Detta kan se ut på följande sätt med HTML-kod och CSS:_
 
@@ -348,4 +348,39 @@ https://techaffinity.com/blog/what-is-sass-css-preprocessor/
 https://www.youtube.com/watch?v=Zz6eOVaaelI
 
 ## HC 1.6 Optimering och validering av HTML & CSS
-Beskriv rubriken nedan här
+När en webbsida eller webbapplikation är långsam och tar lång tid att ladda blir användarupplevelsen lidande. Detta leder till att användare överger sidan för snabbare alternativ. Det har gjorts en mängd studier på användarbeteende som visar att en snabb sida som går fort att ladda har fler besökare samt att besökarna också har en tendens att återbesöka sidan om de är nöjda med själva användarupplevelsen. Detta är givetvis ”good for business”.
+
+**Optimering av HTML**
+Det finns flera sätt att optimera en webbsida för att få bästa möjliga prestanda. Ett sätt är genom semantisk optimering som kan variera beroende på vilken webbläsare som används. Detta sätt förändras över tid i takt med att HTML förändras och olika på grund av att webbläsare utvecklas och uppdateras i olika tempon.
+
+För att se till att ens HTML-kod snabbt kan laddas av webbläsaren bör man ha städad, koncis och strukturerad kod. Man bör således undvika ”inline styles” och ”inline scripts”. Man bör istället använda en separat CSS, eller JavaScript  fil som man länkar i ”head” sektionen av HTML dokumentet. Scripts bör annars finnas i slutet av dokumentet för att spara tid om dessa inte är nödvändiga för att sidan ska laddas.
+
+Man bör också undvika tomrum (blank lines). Separera endast kodblock med en tom rad där det är nödvändigt. Man kan använda verktyg som prettier eller HTML Tidy för att städa och optimera upplägget av koden.
+
+För att uppnå bästa möjliga prestanda bör man även se över vad man kan göra på serversidan av webbplatsen eller applikationen. Det finns olika verktyg för att komprimera koden som till exempel GZIP eller något liknande. GZIP reducerar mängden data som skickas till användarens webbläsare vilket förbättrar prestandan.
+
+Se till att de viktigare filerna laddas in i rätt ordning och renderas tidigt.
+
+**Optimering av CSS**
+Optimering av CSS handlar övergripande om att undvika ”render blocking”. Detta kan beskrivas som block av kod (vanligtvis CSS eller JavaScript) som hindrar en sida från att laddas snabbt. Dessa block tar lång tid för webbläsaren att processa men är inte nödvändiga för att sidan ska laddas vilket går ut över användarupplevelsen.
+
+Ett exempel på detta kan vara till exempel media queries som är viktiga för sidans responsivitet. Då webbläsaren inte renderar sidan förrän all kod lästs in om inte annat angivits. Genom att till exempel dela upp CSS-koden i flera filer baserade på dess media queries kan man undvika att renderingen blockeras av oönskad CSS-kod. Flytta därför de delar av koden som inte behövs omedelbart för att sidan ska laddas (till exempel ”print styles”) till en separat fil som länkas i HTML dokumentet samt lägg till en media query som i detta fall klargör att detta är ett ”print stylesheet” för utskrift.
+
+**SEO – Search Engine Optimization**
+Detta syftar till att optimera webbsidans sökbarhet. För att få ut det mesta av ens webbsida / applikation är det viktigt att den är synlig när användare till exempel söker efter en viss produkt på google. För att uppnå detta bör man se till att ta reda på, och använda de populäraste och mest eftersökta orden som kan relateras till produkten i fråga, Med användning av lämpliga mallar och genomtänkt strategi för sökbarhet kan sökmotorn presentera sidan högt upp i listan.
+
+**Validering**
+Validering av HTML- och/  eller CSS-koden syftar till att höja kvalitén samt att se till att koden följer de rekommenderade standarder enligt W3C.
+
+En HTML validator är ett verktyg som felsöker koden och pekar ut syntaxfel och problem eller bristande standard. Det är en rekommendation att använda detta kraftfulla verktyg för att säkerställa att koden håller hög kvalité.
+
+En CSS validator är ett verktyg som kontrollerar ens CSS-kod med syfte att se till att den efterföljer rekommenderade standarder enligt W3C. Verktyget kan även hjälpa till med att identifiera och komma till rätta med problem som kan uppstå med kompatibilitet då alla webbläsare inte stödjer implementering av CSS.
+
+_Källor:_
+Optimering
+https://blog.bluetriangle.com/how-to-optimize-html-to-boost-web-performance
+https://www.geeksforgeeks.org/7-tips-for-performances-optimization-in-web-development/
+https://developer.mozilla.org/en-US/docs/Learn/Performance/CSS
+
+Validering
+https://www.dotnek.com/Blog/Marketing/w3-html-validation-and-css-validation-for-seo

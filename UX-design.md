@@ -71,7 +71,44 @@ _Källa:_ Föreläsning med Sebastian Lindgren den 17 oktober 2022 - UX / UI sam
 Beskriv rubriken här
 
 ## UD 1.4 Prototyping
-Beskriv rubriken här
+Vad är en prototyp, och varför är det bra att använda prototyper när man utvecklar en webbsida?
+
+När det kommer till webbutveckling pratar man främst om två olika sorters prototyper high- respektive low-fidelity prototyper.
+
+**Low-fidelity prototyp**
+En low-fidelity prototyp, även kallad _low-fi prototyp_, är en enkel skiss över en webbsidas övergripande design. Skissen kan vara på papper eller skapad i något program som till exempel Figma och syftar till att generera feedback om sidans design och upplägg. Skissen innehåller ingen funktionalitet och ska vara snabbt framtagen och okomplicerad.
+
+**Wizzard of OZ tekniken**
+Ett kul och givande sätt att arbeta med low-fi prototyper är Wizzard of OZ tekniken. Tekniken går ut på att man på ett lekfullt sätt rollspelar med en "användare” som får prova olika design-upplägg och ge feedback på hur dessa känns. Man arbetar utifrån frågeställningen ”hur funkar det för dig att använda sidan i dess nuvarande form?”. Man dokumenterar därefter feedbacken man får från användaren som man kan använda som underlag för att ta fram _user-stories_. Som underlag använder man en low-fi skiss på papper där man klippt ut olika element som man pusslar ihop på olika sätt som användaren får testa och utvärdera. Tekniken är därmed ett effektivt och roligt sätt att skapa sig en förståelse för man utvecklar själva webbsidan.
+
+**High-fidelity prototyp**
+En high-fidelity prototyp, även kallad _high-fi prototyp_, är en mer komplicerad prototyp som ska efterlikna hur den färdigutvecklade produkten / webbsidan kommer se ut. En high-fi prototyp tas oftast fram efter ett flertal low-fi skisser och ofta i ett senare skede under själva utvecklingsprocessen och kan användas för att visa upp något som liknar slutresultatet för en kund på t.ex. ett demo-möte.
+
+Prototypen kan vara själva webbsidan utan ”backend” funktionalitet (vilket ofta är skillnaden mellan en high-fi prototyp och själva slutprodukten). Prototypen syftar till att, tillsammans med kund, bestämma de sista design-detaljerna inför färdigställande.
+
+En high-fi prototyp kräver dock mer förarbete och tar betydligt längre tid att ta fram än en low-fi prototyp.
+
+**Hight-fi VS Low-fi**
+
+**Low-fi**
+    * Går fort
+    * Endast layout
+    * Ger uppfattning om var sidans element bör befinna sig
+
+**High-fi**
+    * Mer specifik
+    * Liknar slutresultatet
+    * Färdigt UI
+    * Ger förståelse för sidans funktionalitet
+    * Används vid demo för kund
+
+**Varför bör man använda sig av prototyper?**
+
+Det finns flera argument för att använda prototyper i samband med webbutveckling. Med hjälp av prototyper kan men tidigt skaffa sig en uppfattning om vad som behöver göras, vilket även sparar tid och budget. En UX-designer är mindre kostsam än en programmerare. Användning av t.ex. low-fi prototyper kan vara bra under projektets gång då allt kan förändras som till exempel upplägg, bilder och fonter med mera och även anpassa designen efter kundens önskemål.
+
+Precis som med agila metoder kan man designa i iterationer för att få feedback om användarnas upplevelser.
+
+_Designa → Testa → Feedback → Repeat_
 
 ## UD 1.5 Personas och målgruppsanalys
 Beskriv rubriken här

@@ -68,7 +68,29 @@ Om sidan innehåller en större mängd information med många olika artiklar bö
 _Källa:_ Föreläsning med Sebastian Lindgren den 17 oktober 2022 - UX / UI samt 20 oktober 2022 - användbarhet kognition
 
 ## UD 1.3 Riktlinjer för användbarhet
-Beskriv rubriken här
+Enligt WCAGs riktlinjer tas följande rekommendationer upp:
+
+**Var konsekvent i navigation, struktur och utformning**
+Att ha ett konsekvent upplägg och en tydlig struktur är viktigt för att användaren ska förstå hur webbsidan fungerar. Liknande uppgifter ska utföras på samma sätt oavsett var på sidan man befinner sig. Vissa  bilnda användare eller de med nedsatt syn memorerar hemsidan och detta blir svårare om sidan inte har ett konsekvent upplägg.
+
+**Låt gränssnittselement ha samma utseende**
+Med gränssnittselement menar man till exempel menyer, sidhuvud, sidfot, knappar och andra kontroller. Låt dessa se likadana ut, vara placerade på samma ställe samt fungera på samma sätt oavsett var på hemsidan man befinner sig.
+
+Detta leder vidare in på **förutsägbarhet**. Man bör säkerställa att hemsidan presenteras och fungerar på ett förutsägbart sätt.
+
+**Erbjud användarna flera sätt att navigera hemsidan**
+Användare har olika strategier när de navigerar en hemsida. Användare med nedsatt syn kan föredra en sökfunktion medan användare med kognitiv nedsättning kan föredra en innehållsförteckning i alfabetisk ordning.
+
+**Gör länkar, klickbara ytor och menyer användbara för alla**
+Dessa element spelar en viktig roll på hemsidan och ska vara lätta att upptäcka och tillgängliga för alla. För att uppnå detta bör man tänka på att inte placera länkar för nära varandra, förstora den klickbara ytan genom att inkludera ett område runt den som är länkat, gör ikoner som är en del av navigationen klickbara. När man kombinerar både bildelement och text bör båda delarna vara klickbara. Framhäv länkarna grafiskt.
+
+**Responsivitet**
+Se till att din hemsida är responsiv och funkar på olika skärmstorlekar utan att funktionaliteten går förlorad eller utan att användarna behöver scrolla i mer än en riktning.
+
+**Övrigt**
+Se till att din sida har en logisk ”tab-ordning” samt erbjud en möjlighet att hoppa förbi återkommande innehåll.
+
+_Källa:_ https://webbriktlinjer.se/riktlinjer/?filter=on&guidelineorder=p&freetext-filter=&query-vlwebb-target%5B%5D=280
 
 ## UD 1.4 Prototyping
 Vad är en prototyp, och varför är det bra att använda prototyper när man utvecklar en webbsida?

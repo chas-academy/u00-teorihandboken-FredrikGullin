@@ -110,6 +110,8 @@ Precis som med agila metoder kan man designa i iterationer för att få feedback
 
 _Designa → Testa → Feedback → Repeat_
 
+_Källa:_ Föreläsning med Sebastian Lindgren den 17 oktober 2022 - UX / UI samt Figma workshop den 19 oktober 2022
+
 ## UD 1.5 Personas och målgruppsanalys
 Beskriv rubriken här
 

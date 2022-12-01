@@ -30,8 +30,42 @@ Kontraster är även mycket användbart för att få visa element att sticka ut 
 
 Bäst blir det när detta kombineras på ett balanserat sätt. Dessa koncept återkommer även när man fokuserar på UX-design och användbarhet.
 
+_Källa:_ Föreläsning med Sebastian Lindgren den 17 oktober 2022 - UX / UI
+
 ## UD 1.2 UX och användbarhet
-Beskriv rubriken här
+När man arbetar med UX design och användbarhet så kan man implementera ovanstående metoder på olika sätt för att få användaren att instinktivt förstå hur hen kan interagera med sidan / appen på ett naturligt sätt.
+
+_”Om en produkt behöver en manual för att användaren ska förstå hur man interagerar med produkten har designen misslyckats” – The psychology of everyday things, Donald A. Norman , year1988._
+
+Även om citatet kommer från en gammal (och rolig) bok så är det grundläggande tankesättet fortfarande brukligt.
+
+Så hur designar man en hemsida så att en användare instinktivt förstår hur hen ska interagera med sidan?
+
+Jag kommer nu att gå igenom några exempel på tankesätt som kan hjälpa oss med detta.
+
+**Knappar, länkar och klickbara element**
+”Allt som går att klicka på måste kommunicera klickbarhet”. Detta kan man uppnå genom att ha ett konsekvent utseende på klickbara element som genomsyrar hela designen. Detta skulle innebära att knappar och länkar med mera alltid ser likadana så att användaren lätt kan känna igen detta. Det underlättare även för användaren om man har tydliga beskrivningar av va elementet gör.
+
+**Navigation**
+För att skapa bra förutsättningar för en lättnavigerad sida kan man använda färgteman, kontraster, balanserad layout med passande fördelning och avstånd mellan olika element. Man kan även till exempel använda ovannämnda F och Z mönster. För att göra sidan lätt att navigera bör den vara enkel, förutsägbar och konsekvent. Se även till att vara säker på att alla länkar funkar som de ska och att ”bakåtknappen” fungerar.
+
+Länkar som leder till en extern sida bör märkas upp med en ikon som beskriver att det handlar om en extern länk. Länkar bör också sticka ut och ha en design där det framgår att det handlar om en länk samt att dessa är lätta att känna igen.
+
+**Meny**
+För att skapa en bra meny bör alla valmöjligheter vara tydliga och synliga. Viktiga alternativ bör kanske alltid vara synliga för användaren. Menyn bör även vara responsiv för att underlätta för användning på olika enheter med olika skärmstorlekar (gäller egentligen alla element på hela sidan), men även responsiv på ett sätt som kan underlätta för användare med olika funktionshinder så som nedsatt syn med mera.
+
+I dagsläget finns det några vedertagna modeller för menyer som användare lätt känner igen så till exempel en dropdown-meny för klickbara element, hamburger-meny för responsivitet med anpassning för mindre skärmstorlekar, eller en klassisk nav-bar för större skärmar på t.ex. en laptop eller desktop dator.
+
+**Font**
+Som tidigare nämnt så uppmärksammas och läses en större font först. HTML har färdiga standarder för storlekar på rubriker och underrubriker (h1, h2 och h3 o.s.v.) som fungerar bra. Utöver detta bör man använda en tydlig font (som passar scenariot).
+
+**Språk**
+När det kommer till språk och textelement bör man undvika för tekniskt språk (så länge situationen inte behöver det). Man bör också undvika för långa textstycken och för långa meningar som gör texten svårläst. MAN BÖR ÄVEN AV SAMMA ANLEDNING UNDVIKA MENINGAR MED ENDAST VERSALER.
+
+**Sökfunktion**
+Om sidan innehåller en större mängd information med många olika artiklar bör man ha en sökfunktion. Sökfält brukar vara placerade uppe i högra hörnet på hemsidor och det kan vara bra att följa denna oskrivna regler då användare lätt kan hitta och känna igen sökfältet baserat på tidigare erfarenheter. Sökfältet bör vara begränsat till att kunna ta emot max 27 bokstäver.
+
+_Källa:_ Föreläsning med Sebastian Lindgren den 17 oktober 2022 - UX / UI samt 20 oktober 2022 - användbarhet kognition
 
 ## UD 1.3 Riktlinjer för användbarhet
 Beskriv rubriken här

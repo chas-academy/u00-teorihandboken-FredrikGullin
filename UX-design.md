@@ -141,6 +141,8 @@ En målgrupp är en grupp människor som är intressanta baserat på deras demog
 
 En _målgruppsanalys_ innebär att man identifierar vilken målgrupp som är mest trolig att använda en produkt eller tjänst, samt aktuellt marknadssegment. I en målgruppsanalys tar man även fram en beteendeprofil som kan vara till stöd under design- och utvecklingsarbetet.
 
+I en målgruppsanalys kan man även använda en _effektkarta_ för att få svar på varför en användare vill göra något (effektmål), vilka målgrupper produkten är till för, hur vi möter användarbehov och effektmål samt vad användarna behöver. Man kan även använda sig av en _kundresekarta_ som kan beskrivas som en visuell story-line av engagemang som en kund har med en tjänst eller produkt. Detta syftar till att skapa en bättre uppfattning om kunden. 
+
 **Personas**
 För att skaffa sig en bredare förståelse av ens målgrupp kan man använda personas. En persona är en fiktiv karaktär som representerar den samlade bilden av ett segment av din målgrupp, alltså inte hela din målgrupp. Tanken är att personas ska beskriva målgruppens behov, attityder och beteendemönster. På så sätt blir det enklare att föreställa sig vilka som kommer besöka ens webbsida eller använda tjänsten man utvecklar. Med hjälp av personas får man förståelse för målgruppens förväntningar och önskemål och därmed förstå vad som behöver finnas med och hur det bör fungera.
 
@@ -156,7 +158,23 @@ https://maiamarketing.se/blogg/skillnad-mellan-malgrupp-kundgrupp-personas/
 https://navigator.se/tjanster/inbound-och-content-marketing/personas-och-kundresor-hjalper-dig-kommunicera-effektivt/?utm_term=personas&utm_campaign=Inbound+marketing&utm_source=adwords&utm_medium=ppc&hsa_acc=6219046655&hsa_cam=14999501036&hsa_grp=132720087793&hsa_ad=570426336943&hsa_src=g&hsa_tgt=kwd-91997874&hsa_kw=personas&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=EAIaIQobChMInNX2orjZ-wIVQSgYCh38rg-DEAAYAyAAEgIhe_D_BwE
 
 ## UD 1.6 Empiriska metoder
-Beskriv rubriken här
+Inom webbutveckling kan man använda sig av empiriska metoder för att undersöka eller observera för att skaffa sig nödvändig kunskap.
+
+Det finns olika metoder för att undersöka och dessa kan tillämpas vid olika skeden som innan, under eller efter utvecklingsprocessen.
+
+Innan utvecklingsprocessen kommit igång på allvar kan man behöva göra en viss mängd förarbete. Man kan då ta reda på vilken information som redan finns (market research, google analytics med mera). Man kan också reda ut vad produkten man tänker utveckla kan jämföras med och vad man kan lära sig utav detta. Det rekommenderas att tänka igenom vilka som ingår i målgruppen för produkten (vilka är användarna och hur ser deras behov ut?). Som UX-experter, vilka vedertagna regler bör vi undersöka för detta projekt?
+
+Under själva utvecklingsprocessen kan man undersöka vad användarna gör när de använder produkten eller vad de känner när de interagerar med produkten. Detta kan ge bra feedback som kan göra utvecklingsarbetet mer effektivt. Efter projektet är klart kan man reflektera över vad man lärt sig och vilka oförutsedda scenarion som uppstått under själva utvecklingsprocessen.
+
+Till empiriska metoder tillkommer även intervjuer. Man kan till exempel genomföra en kontextuell intervju för att generera insikter om användningssituationer och användarbeteenden. Man bör vara nyfiken på personen som intervjuas och ha ett utforskande angreppssätt och ställer öppna frågor och följdfrågor (hur, varför, beskriv mer etc).
+
+Man kan också genomföra djupintervjuer med olika fokusgrupper. Intervjun kan hållas direkt eller per telefon. Detta kan vara bra för att skaffa sig en djupare insikt i användarnas behov, problem och beteenden med mera. Även i detta fall ställer man öppna frågor och följdfrågor till personen man intervjuar för att få ut så mycket information som möjligt.
+
+Inför en intervju bör man tänka på var intervjun ska genomföras (i vilken miljö), man bör förbereda personen som ska intervjuas och bekräfta att denne är införstådd på intervjuns innebörd och få ett samtycke till detta. Informera personen ifråga om hur lång tid intervjun beräknas ta. Dokumentera det som kommer fram under intervjun på valfritt sätt. Använd en intervjuguide vid behov för att inte missa relevanta frågor. Ställ gärna öppna frågor och ställ sedan följdfrågor för att skapa klarhet. Lyssna på personen och använd tystnad för att ge utrymme för genomtänkta svar.
+
+Efter intervjufasen är över kan man sammanfatta materialet och jämföra olika personers svar för att hitta gemensamma nämnare.
+
+_Källa:_ Föreläsning med Sebastian Lindgren den 19 oktober 2022 - Empiriska metoder och intervjuer
 
 ## UD 1.7 Grundläggande kognitionspsykologi
 Beskriv rubriken här

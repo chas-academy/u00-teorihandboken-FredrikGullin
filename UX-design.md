@@ -135,7 +135,22 @@ _Designa → Testa → Feedback → Repeat_
 _Källa:_ Föreläsning med Sebastian Lindgren den 17 oktober 2022 - UX / UI samt Figma workshop den 19 oktober 2022
 
 ## UD 1.5 Personas och målgruppsanalys
-Beskriv rubriken här
+Detta begrepp är nära sammanlänkat när det kommer till dagens webbutveckling.
+
+En målgrupp är en grupp människor som är intressanta baserat på deras demografi, geografi, intressen och / eller påvisat beteende. Demografi består vanligtvis av faktorer som ålder och kön samt intressen medan geografi syftar till olika platser eller områden. Ett exempel på ett beteende kan vara att de har varit inne på en webbsida men inte slutfört ett köp.
+
+**Personas**
+För att skaffa sig en bredare förståelse av ens målgrupp kan man använda personas. En persona är en fiktiv karaktär som representerar den samlade bilden av ett segment av din målgrupp, alltså inte hela din målgrupp. Tanken är att personas ska beskriva målgruppens behov, attityder och beteendemönster. På så sätt blir det enklare att föreställa sig vilka som kommer besöka ens webbsida eller använda tjänsten man utvecklar. Med hjälp av personas får man förståelse för målgruppens förväntningar och önskemål och därmed förstå vad som behöver finnas med och hur det bör fungera.
+
+En rekommendation är att använda mellan tre till fem personas (beroende på projektets natur). Det är tillräckligt många för att täcka majoriteten av användarna samtidigt som det är avgränsat nog för att skilja dem från varandra.
+
+När man tar fram en persona kan det vara bra att ta hänsyn till demografiska faktorer som ålder, relationsstatus, jobbtitel och inkomst, och personliga faktorer som egenskaper, intressen, livsstil, värderingar och drivkrafter samt bakgrundsfaktorer som ansvarsområden, yrkeslivserfarenhet, utbildning, kanaler och digital mognad.
+
+Vidare är det bra att reflektera över vilka mål en persona kan tänkas ha och vilka utmaningar man behöver bemöta för att målen ska uppnås vilket kan ge en uppfattning om hur man bör designa sin webbsida.
+
+_Källor:_
+https://maiamarketing.se/blogg/skillnad-mellan-malgrupp-kundgrupp-personas/
+https://navigator.se/tjanster/inbound-och-content-marketing/personas-och-kundresor-hjalper-dig-kommunicera-effektivt/?utm_term=personas&utm_campaign=Inbound+marketing&utm_source=adwords&utm_medium=ppc&hsa_acc=6219046655&hsa_cam=14999501036&hsa_grp=132720087793&hsa_ad=570426336943&hsa_src=g&hsa_tgt=kwd-91997874&hsa_kw=personas&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gclid=EAIaIQobChMInNX2orjZ-wIVQSgYCh38rg-DEAAYAyAAEgIhe_D_BwE
 
 ## UD 1.6 Empiriska metoder
 Beskriv rubriken här

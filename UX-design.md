@@ -35,13 +35,21 @@ _Källa:_ Föreläsning med Sebastian Lindgren den 17 oktober 2022 - UX / UI
 ## UD 1.2 UX och användbarhet
 När man arbetar med UX design och användbarhet så kan man implementera ovanstående metoder på olika sätt för att få användaren att instinktivt förstå hur hen kan interagera med sidan / appen på ett naturligt sätt.
 
-_”Om en produkt behöver en manual för att användaren ska förstå hur man interagerar med produkten har designen misslyckats” – The psychology of everyday things, Donald A. Norman , year1988._
+**_”Om en produkt behöver en manual för att användaren ska förstå hur man interagerar med produkten har designen misslyckats” – The psychology of everyday things, Donald A. Norman , year1988._**
 
 Även om citatet kommer från en gammal (och rolig) bok så är det grundläggande tankesättet fortfarande brukligt.
 
 Så hur designar man en hemsida så att en användare instinktivt förstår hur hen ska interagera med sidan?
 
 Jag kommer nu att gå igenom några exempel på tankesätt som kan hjälpa oss med detta.
+
+Användbarhet är ett mått på hur användare upplever att en produkt uppnår specifika mål på ett effektivt och tillfredsställande sätt. Inom UX-design så är målet att skapa en så användarvänlig webbsida som möjligt. För att kunna utvärdera användbarheten är det bra att sätta upp ett _designmål_. Det finns två typer av designmål, _användbarhetsmål_ (usability goals) och _upplevelsemål_ (user experience goals).
+
+Användbarhetsmålet avser att uppskatta hur ändamålsenlig produkten är och hur effektiv den är att använda. Man uppskattar även hur säker, nyttig, hur lätt den är att lära sig använda och komma ihåg hur den används.
+
+Upplevelsemål avser att mäta användarens upplevelse av en produkt och består ofta av en större mängd aspekter så som upptäckbarhet, lärbarhet, undvikande av fel, felåterställning, känslomässig respons, slutförande av uppgift / ändamål, preferens, bibehållande, effektivitet, engagemang och lyhördhet för att nämna några.
+
+Utöver detta kan man även tänka på följande för att skapa en så användarvänlig upplevelse som möjligt:
 
 **Knappar, länkar och klickbara element**
 ”Allt som går att klicka på måste kommunicera klickbarhet”. Detta kan man uppnå genom att ha ett konsekvent utseende på klickbara element som genomsyrar hela designen. Detta skulle innebära att knappar och länkar med mera alltid ser likadana så att användaren lätt kan känna igen detta. Det underlättare även för användaren om man har tydliga beskrivningar av va elementet gör.
@@ -177,4 +185,28 @@ Efter intervjufasen är över kan man sammanfatta materialet och jämföra olika
 _Källa:_ Föreläsning med Sebastian Lindgren den 19 oktober 2022 - Empiriska metoder och intervjuer
 
 ## UD 1.7 Grundläggande kognitionspsykologi
-Beskriv rubriken här
+Kognition involverar flera processer, bland annat uppmärksamhet, minne, perception och inlärning. Hur ett gränssnitt är utformat påverkar i hög grad hur en användare kan uppfatta, fokusera, lära sig och komma ihåg hur uppgifter utförs.
+
+Teoretiska ramverk som till exempel mentala modeller kan användas för att förstå hur och varför användare interagerar med olika produkter.
+
+Kognitionspsykologin behandlar de tanke- och kunskapsprocesser vi använder för när vi tolkar omvärlden genom våra sinnen. Det handlar om förmågan att styra uppmärksamhet, språkförståelse, vårt minne samt vår kapacitet att resonera och lösa problem.
+
+En god förståelse för detta hjälper oss att förstå användaren.
+
+För att utveckla en bra produkt behöver vi förstå att interaktionen med teknologi är kognitiv. Vi behöver förstå vilka kognitiva processer samt vilka kognitiva begränsningar användarna har. Detta kan ge en uppfattning om vad användarna kan, respektive inte kan förväntas göra samt bidra till att identifiera vilka problem som kan uppstå i samband med interaktionen och varför detta händer.
+
+_Kognition betyder ”hjärnans förmåga att ta emot, lagra, bearbeta och plocka fram information”._
+
+I hjärnan pågår ett flertal kognitiva processer så som uppmärksamhet, perception, minne, inlärning, läsa, tala och lyssna (tolka och använda  uttryck / språk) samt problemlösning, planering, resonemang och beslutsfattande.
+
+Uppmärksamhet gör att vi kan välja saker att fokusera på i en miljö där vi är omgivna av stimulans på olika sätt. Uppmärksamhet involverar synen och / eller hörseln och vi vill att våra användare lätt ska kunna fokusera på relevant information. Delad uppmärksamhet ger en begränsad förmåga att hålla reda på olika saker. Med rätt design kan man fånga användarens uppmärksamhet på olika sätt. Generellt kan man säga att en enklare layout är att föredra framför en layout där användaren överrumplas av för många intryck på en gång. Som tidigare nämnt så gör att informationen är framträdande där den behöver uppmärksammas. Använd tekniker som får informationen att stå ut med hjälp av färg, ordning och avstånd med mera.
+
+Dessa regler gäller även för våra visuella intryck och för vår perceptionsförmåga.
+
+När det gäller att designa för att produkten ska vara lätt att komma ihåg så är kontext (var / när) en viktig bidragande faktor. Vi känner igen saker snabbare än vi minns dem. Därför är det fördelaktigt att ha en konsekvent design på till exempel en webbsida. Se till att hålla uppgifter enkla och undvik komplicerade procedurer.
+
+När det gäller inlärning så är det bra om en produkts funktionalitet framgår bara genom att titta eller känna på den. För att ge ett exempel så föreställ dig korken på en petflaska. När användaren greppar korken signalerar denna till hjärnan att man får bra grepp om man vrider den åt något håll, men också att man inte får ett bra grepp om man försöker dra ut korken. Detta då korken är räfflad vertikalt. Användaren förstår således instinktivt att man måste vrida korken för att få av den. Detta är ett exempel på en design som användaren instinktivt kan förstå och den är därför väldigt lätt att lära sig. Nu skiljer sig en kork från en webbsida men grundprincipen bör vara den samma. Eftersträva en design som bjuder in till interaktion och där användaren instinktivt förstår hur hen tar sig fram.
+
+_Källor:_
+Föreläsning av Sebastian Lindgren den 20 oktober 2022 – Användbarhet kognition
+https://www.testingtime.com/en/blog/cognitive-psychology-in-ux/

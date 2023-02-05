@@ -75,6 +75,8 @@ En ytterligare faktor för säkerhet man bör ha i åtanke är att inte spara an
 
 I PHP finns funktionerna password_hash() och password_verify() för detta ändamål.
 
+_Källa: Föreläsning "Säkerhet i PHP" av Sebastian Lindgren den 16 januari 2023_
+
 ## BE 1.4 MVC
 Beskriv rubriken här
 
@@ -94,7 +96,50 @@ Beskriv rubriken här
 Beskriv rubriken här
 
 ## BE 1.10 cURL
-Beskriv rubriken här
+cURL är ett terminalverktyg som möjliggör utbyte av data mellan en enhet och en server genom en terminal. 
+
+Genom att använda detta CLI (command line interface) så kan en användare ange en specifik server URL (adressen dit de vill skicka en request) och den data de vill skicka till serverns URL.
+
+Till skillnad från andra liknande verktyg för detta ändamål så använder cURL endast terminalen och saknar ett GUI. cURL fungerar på Linux, Mac och Windows.
+
+cURL använder "libcURL client-side URL transfer library" som stödjer många olika "transfer protocols" så som HTTPS, SMTP och FTP. Det erbjuder även en möjlighet att inkludera "cookies", sätta upp proxys och lägga till en auktoriserings metod för olika requests.
+
+cURL kan användas för att testa en API, ladda ner data från olika källor, testa webbsidor och följande "redirects" genom terminalen.
+
+cURL kan kombineras med olika kommandon för att utföra olika uppgifter så som GET, POST, PUT, PATCH och DELETE. För att visa hur detta går till kommer jag ge några exempel på hur ett curl-kommando är uppbyggt.
+
+**GET**
+curl -X GET http://localhost:3000/posts
+
+Detta kommandå hämtar all data från databasen på angiven URL. I detta fall databasen på localhost, port 3000, posts.
+
+Denna data kommer därefter skrivas ut i terminalen där vi kan ta del av informationen som finns i posts.
+
+**POST**
+curl -X POST -d 'title=hello' -d 'author=Freddo' http://localhost:3000/posts
+
+Detta kommando kommer skapa en ny post i posts med title "hello" och author "Freddo" i databasen på localhost, port 3000, posts.
+
+**PUT**
+curl -X -d 'title=hello' -d 'author=Freddo' http://localhost:3000/posts/1
+
+Detta kommando kommer ändra den befintliga posten med id 1 (om vi utgår ifrån att det ursprungligen fanns en post med id 1) till title "hello" och author "Freddo".
+
+Observera att PUT ändrar de parametrar man anger men raderar / skriver över övrig data som eventuellt finns i denna post.
+
+**PATCH**
+curl -X PATCH -d 'title=newHello' http://localhost:3000/posts/1
+
+Detta kommando kommer endast ändra title på posten med id 1 (ovanstående post) till "newHello" men övrig data lämnas oförändrad.
+
+**DELETE**
+curl -X DELETE http://localhost:3000/posts/1
+
+Detta kommande kommer radera post med id 1 från databasen.
+
+_cURL som egentligen uttalas curl är ett mycket enkelt, snabbt och bekvämt sätt att hantera och testa t.ex. ett API och kommer bli en mycket älskvärd kompanjon senare i arbetslivet._
+
+_Källa: Föreläsning "Dataformat curl och PHP inlogg" av Sebastian Lindgren den 19 januari 2023_
 
 ## BE 1.11 REST
 Beskriv rubriken här

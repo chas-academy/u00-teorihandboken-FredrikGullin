@@ -150,4 +150,37 @@ Beskriv rubriken här
 Beskriv rubriken här
 
 ## BE 1.13 Webbservrar
-Beskriv rubriken här
+Ordet webbserver syftar både på själva datorn (hårdvaran) som används för ändamålet och även på det program som sköter innehållet och kommunikationen för tjänsten som servern tillhandahåller.
+
+**Men vad innebär detta?**
+
+Det finns många olika typer av servrar så som applikations- och webbservrar (samt dess hårdvara), men också databas-servrar, fax-servrar, mail-servrar, spel-servrar med mera.
+
+**Hårdvara**
+
+I detta avsnitt går vi igenom hårdvarusidan av en webbserver.
+
+![Server illustration](./pictures-Backendutveckling/serverIllustration.jpg)
+
+Som bilden beskriver finns en dator på ena sidan som skickar en request som går via intern och kommer fram till en webbserver (en fysisk dator konfigurerad som server) som behandlar förfrågan och returnerar ett svar.
+
+En webbserver är egentligen inget annat än en dator som är speciellt anpassad för att och konfigurerad för att hantera många hemsidor. Ofta står dessa hos ett driftbolag som har snabb internetuppkoppling och personal som kan hantera support. En webbserver för ett större ändamål behöver dock betydligt mer plats, RAM-minne och en betydligt starkare processor för att kunna hantera så många requests som möjligt och ge en stabil användarupplevelse.
+
+En webbserver behöver kunna hantera flera anslutningar samtidigt och det dröjer inte länge innan det blir arbetsmässigt blir "tungt" för en webbserver. För att komma runt problem med otillräcklig eller övermålig hårdvara kan man använda sig av "clud" tjänster som är skalbara och utgår ifrån tjänstens behov baserat på antal användare / requests.
+
+**Mjukvara**
+
+Det som finns på webbservern är mjuvara för att hantera serverns olika uppgifter.
+
+![Server illustration](./pictures-Backendutveckling/serverIllsustration2.jpg.jpg)
+
+I bilden ovan kan vi se hur servern hanterar en request. En webbserver-applikation är ett program som installeras på en fysiskwebbserver och som ansvarar för hantera anslutningar, tolka frågor och skicka svar till användare. Vanliga exempel på webbserver-applikationer är Apache och Nginx. Dessa kan konfigureras för att stödja olika webbprotokoll så som HTTP och HTTPS, och används för att köra olika typer webbplatser och webb-applikationer.
+
+**HTTPd**
+
+Det som brukar ligga och ta emot inkommande förfrågningar (requests) är och skicka ut svar (responses) är någon typ av HTTPd program. Detta program körs i bakgrunden och har rollen som server i en klient-server modell och använder sig av HTTP och HTTPS protokollen. Vanliga implementationer av dessa är Apache och Nginx. Ca 70% av alla webbplatser använder Apache.
+
+_Denna punkt kan kombineras med punkten säkerhet i PHP, från avsnittet "Vad är säkerhet?" fram till "Applikationssäkerhet"._
+
+_Källa: Föreläsning "webbserver och composer" av Sebastian Lindgren den 23 januari 2023_
+

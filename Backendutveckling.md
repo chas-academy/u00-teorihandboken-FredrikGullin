@@ -80,7 +80,31 @@ Ett sätt att skydda sig mot skadlig användarinput (även kallat injektioner) k
 _Källa: Föreläsning "Säkerhet i PHP" av Sebastian Lindgren den 16 januari 2023_
 
 ## BE 1.4 MVC
-Beskriv rubriken här
+MVC är generellt ett sätt att tänka när man strukturerar sin kod och som kan implementeras med alla språk som visar för, tar emot data från och sparar data åt en användare i en databas.
+
+**Vad är MVC och varför bör man använda det?**
+
+_För att kunna veta vad MVC är och varför vi behöver det kan vi börja med att tänka på vad vi vill att våra applikationer ska göra._
+
+MVC står för "Model View Controller" och representerar den arkitektur utvecklare implementerar när de utvecklar applikationer. När MVC arkitektur implemmenteras tar man hänsyn till strukturen av applikationens dataflöde och används när man arbetar med user interfaces, data och controllers. Det separerar även en applikations logiska del och det som hanterar det som visas på skärmen. Uppdelningen underlättar underhåll av applikationen.
+
+Uppdelningen ser oftast ut på följande sätt:
+
+* Model - Hanterar data och logik
+* View - Hanterar layout och skärmrelaterat innehåll
+* Controller (och routes) - Hanterar requests och "route commands" för modellen och vyerna 
+
+![Server illustration](./pictures-Backendutveckling/MVC-overview.jpg)
+
+När man arbetar med MVC så strävar man även efter att strukturera projektet på ett standardiserat sätt. På så vis kan man organisera sina models, views, routs, controllers och migrations så att det alltid är lätt att hitta det man behöver. Detta underlättar om man ska hoppa in i ett nytt projekt eller om man arbetar i ett större projekt.
+
+Ett återkommande begrepp inom MVC eller programmering generellt är "separation of concerns" och "design patterns" vilket kortfattat syftar på uppdelningen av en applikations olika delar eller lager som beskrivs ovan.
+
+Utöver detta så  används MVC för att reducera komplexiteten i koden, förenkla återanvändning av kod, öka flexibiliteten.
+
+_D*RY - Don't * Repeat Yourself!_
+
+_Källa: Föreläsning "MVC intro" av Sebastian Lindgren den 26 januari 2023_
 
 ## BE 1.5 Wordpress
 Beskriv rubriken här

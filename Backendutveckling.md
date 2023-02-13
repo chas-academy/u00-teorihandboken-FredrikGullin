@@ -77,7 +77,16 @@ En framgångsrik inställning är att se användardata som potentiellt skadlig o
 
 Ett sätt att skydda sig mot skadlig användarinput (även kallat injektioner) kan vara att använda sig av funktionerna htmlspecialchars() och strip_tags() i PHP. Dessa funktioner saniterar inputen då den inte tillåter html specifika symboler (t.ex. & " ' < >), vilket förhindrar användare från att skicka in direkt skadliga skript i databasen.
 
-_Källa: Föreläsning "Säkerhet i PHP" av Sebastian Lindgren den 16 januari 2023_
+**CSRF-token**
+Ett CSRF-token är ett token som skyddar mot CSRF-requests.
+
+En CSRF-request kan beskrivas som ett post-request som skickas från en "elak" hemsida med syfte att kapa en användares konto. Ponera att en förövare lurar in en användare på en elak hemsida där han skapat en HTML form som till exempel pekar mot _din-applikations-url.com/user/emal._ På detta sätt kan förövaren skicka "elaka" post-requests i databasen och på så vis t.ex. ta över användarens konto med mera.
+
+För att skydda sig mot detta använder man ett CSRF-token som egentligen är en säkerhetsnyckel som är kopplad till den inloggade användarens session. Nyckeln behövs för att kunna manipulera data i databasen och får ett nytt värde varje gång sessionen uppdateras och är på så vis oåtkomlig för andra. Om någon försöker ändra något i databasen utan denna nyckel kommer försöket att avisas.
+
+Detta är en inbyggd säkerhetsfunktion i Laravel som är mycket enkelt att använda. Genom att lägga till @csrf direkt i HTML formen så skapas ett dolt "input fält" som skickar med sessionens unika säkerhetsnyckel när användaren trycker på "submit" och postar något. Därefter tar Laravel emot "post-requesten", inklusive CSRF-token och ger tillåtelse att ändra data i databasen.
+
+_Källa: Föreläsning "Säkerhet i PHP" av Sebastian Lindgren den 16 januari 2023 samt föreläsning "Laravel fortsättning" av Sebastian Lindgren den 1 februari 2023_
 
 ## BE 1.4 MVC
 MVC är generellt ett sätt att tänka när man strukturerar sin kod och som kan implementeras med alla språk som visar för, tar emot data från och sparar data åt en användare i en databas.

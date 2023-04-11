@@ -61,6 +61,8 @@ En klass kan förklaras som en mall för ett objekt, och ett objekt är en insta
 
 När ett enskilt objekt skapas så äver det alla egenskaper och beteenden från klassen, men varje objekt som skapas kan ha olika värden för dessa egenskaper.
 
+__Källa: https://www.w3schools.com/php/php_oop_what_is.asp__
+
 ## BE 1.3 Säkerhet i PHP
 **Vad är säkerhet?**
 Det man brukar prata om är applikationssäkrehet vs IT-säkerhet.
@@ -169,13 +171,58 @@ _D*RY - Don't * Repeat Yourself!_
 _Källa: Föreläsning "MVC intro" av Sebastian Lindgren den 26 januari 2023_
 
 ## BE 1.5 Wordpress
-Beskriv rubriken här
+Wordpress är ett av världens mest enkla och populära innehållshanteringsprogram eller CMS (content managment system). Användning av CSM innebär att skaparen tillhandahåller innehållet medan plattformen / systemet genererar nödvändig kod och organiserar innehållet. Därav är Wordpress ett av de enklaste sätten att skapa en egen webbplats.
+
+Wordpress tillhör "open source" som innebär att plattformens källkod är öppen för alla. Som nämnt används Wordpress för att skapa webbsidor och det är gratis att använda och användare behöver inte betala för licens eller dylikt.
+
+Med Wordpress kan man använda anpassade teman och plugins, webbplatsen som skapas kommer vara annonsfri. Med Wordpress får man även tillgång till en uppsättning analysverktyg.
+
+Wordpress skapades 2003 av Mike Little och Mike Mullenweg. Plattformen är enkel, flexibel och kan användas av vem som helst. Det finns ett flertal kända företag vars webbsidor har skapats med Wordpress så som Sony Music, Variety, Time och Disney med flera.
+
+__Källa: https://www.bluehost.com/blog/what-is-wordpress/?psafe_param=1&utm_campaign=affiliate-link_searchgenericpromo_PPC&utm_source=direct&utm_medium=affiliate&utm_affiliate=searchgenericpromo&irpid=101&clickid=P61C101S570N0B5578A2D4499E0000V261&pb=signup_searchgenericpromo&siteid=101&channelid=P61C101S570N0B5578A2D4499E0000V261&gclid=CjwKCAjwitShBhA6EiwAq3RqA_zhqO_oZwf93gDJXDyXctbwvtMdIUZiALn8dKpBMgYX1Dh1jmKflhoCdWoQAvD_BwE&gclsrc=aw.ds__
 
 ## BE 1.6 Heirarkiska databaser
-Beskriv rubriken här
+En hierarkisk databas är en typ av databas som är organiserad i en trädliknande struktur, där varje post eller dataelement är länkat till en eller flera andra poster eller dataelement. I en hierarkisk databas lagras data i en förälder-barn relation, med en överordnad post kopplad till en eller flera underordnade poster. Denna typ av databas används vanligtvis för att representera datarelationer, t. ex. de som finns i organisationscheman eller släktträd.
+
+I en hierarkisk databas är data organiserat i en hierarki av poster, där den översta posten är "root" i hierarkin. Varje post kan ha en eller flera "barn" / relaterade poster som är länkade till "föräldern", det vill säga posten som står över dessa i hierarkin. Detta tillåter en form av representation av datarelationer och ger en effektiv hämtning av data. Hierarkiska databasmodeller är dock inte lika flexibla som andra typer av databasmodeller och är mindre lämpade för för hantering av komplexa datarelationer eller förändring av datastrukturer.
+
+En av de viktigaste egenskaperna med hierarkiska databaser är att de tillåter snabb och effektiv hämtning av data. Detta då datan är organiserad på ett strukturellt och förutsägbart sätt. Dock kan denna typ av databas vara svår att underhålla och uppdatera då ändringar i strukturen kan påverka hela databasen.
+
+**Fördelar med hierarkiska databaser**
+* Snabb och effektiv hämtning av data
+* Lätt att lägga till / ta bort information
+* Förutsägbar datastruktur vilket gör det lättare att hitta det man söker
+* Effektiv lagring av data då datan lagras i en förälder-barn relation
+* Hög prestanda när det gäller hämtning och sökning, framförallt när det gäller stora datamängder
+
+**Nackdelar med hierarkiska databaser**
+* Begränsad flexibilitet då hierarkiska databaser inte är lämpade för komplexa datarelationer
+* Svårt att underhålla och uppdatera då ändringar kan påverka hela databasen
+* Begränsad möjlighet att manipulera data
+* Begränsad kompatibilitet, hierarkiska databaser är inte kompatibla med andra databasmodeller
+* Brist på standardisering då hierarkiska databasmodeller inte används lika ofta som övriga databasmodeller
+
+__Källa: https://databasetown.com/hierarchical-database/__
 
 ## BE 1.7 Relationsdatabaser, SQL och ER-modellering
-Beskriv rubriken här
+En relationsdatabas är en typ av databas som lagrar och ger åtkomst till datapunkter som är relaterade till varandra. Relationsdatabaser är baserade på en relationsmodell, ett intuitivt och enkelt sätt att presentera data i tabeller. I en relationsdatabas är varje rad i tabellen en post med ett unikt ID som nyckel. Kolumnerna i tabellen innehåller olika attribut av data. Varje post har vanligtvis ett värde per attribut vilket gör det enkelt att upprätta relationer mellan olika dataposter.
+
+**Struktur**
+I en relationsdatabas är de logiska datastrukturerna (tabeller, vyer och index) separerade från de fysiska lagringsstrukturerna. Delningen innebär att databasens administratörer kan hantera den fysiska lagringen av data utan att påverka åtkomsten till den logiska strukturen av data. Om man till exempel byter namn på en fil i databasen så byter man inte namn på dess tabeller.
+
+Uppdelningen av logisk och fysisk struktur gäller även databas operationer / åtgärder som möjliggör för applikationer att manipulera data, poster och strukturer i databasen. Logiska operationer tillåter en applikation att specificera innehållet den behöver, och fysiska operationer operationer avgör hur åtkomsten till datan ser ut samt utförandet av själva åtagandet.
+
+För att kunna försäkra sig om att data alltid är korrekt och tillgänglig följer relationsdatabaser en uppsättning säkerhets- / integritetsregler. T.ex. kan en regel vara att dubletter av rader inte får existera för att kunna förebygga att skadlig kod / felaktig information hamnar i databasen.
+
+Relationsdatabasmodellen är en brett vedertagen standard.
+
+Den enkla och kraftfulla relationsmodellen används av alla typer av organisationer av olika storlekar med olika behov av informationstillgänglighet. Dessa databaser används för att lagra affärsprodukter, spåra e-handelstransaktioner, hantera enorma mängder affärskritisk kundinformation med mera.
+
+Relationsdatabaser kan övervägas vid alla olika typer av informationsbehov där datapunkter är relaterade till varandra och kräver säker och konsekvent hantering.
+
+Relationsdatabaser har funnits sedan 1970-talet. Idag är det den mest vedertagna modellen för databaser.
+
+__Källa: https://www.oracle.com/database/what-is-a-relational-database/__
 
 ## BE 1.8 OAuth i backend
 Beskriv rubriken här

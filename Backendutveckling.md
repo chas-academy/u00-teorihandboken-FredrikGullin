@@ -38,7 +38,28 @@ __Källa: https://www.w3schools.com/php/php_intro.asp__
 
 
 ## BE 1.2 OOP i PHP
-Beskriv rubriken här
+OOP står för objekt-orienterad programmering.
+
+Procedurprogrammering handlar om att skriva procedurer och funktioner som utför operationer på datan, medan objektorienterad programmering handlar om att skapa objekt som kan innehålla både data och funktioner.
+
+Det finns flera fördelar med objektorienterad programmering om man jämför med procedurell programmering.
+
+* OOP är snabbare / och enklare att utföra
+* OOP ger en tydlig struktur för programmet man utvecklar
+* Med OOP kan man undvika upprepningar av kod (DRY - don't repeat yourseld), samt är enklare att underhålla och felsöka tack vare dess strukturella uppbyggnad
+* OOP möjliggör skapandet av återanvändbara applikationer med mindre kod och kortare utvecklingstid
+
+**DRY principen**
+Don't repeat yourself principen (DRY) handlar om att minska upprepning av kod. Som utvecklare bör man extrahera de koder som är vanliga för applikationen och placera dem på en enda plats och återanvända dem istället för att upprepa det. Detta kan OOP hjälpa till med.
+
+**OOP, klasser och objekt**
+Klasser och objekt är de två huvudsakliga aspekterna av objektorienterad programmering.
+
+Jag ska försöka förklara dessa aspekter på ett enkelt sätt. Låt oss säga att vi skapar en klass "frukt", i detta fall skulle till exempel "äpple", "banan" och "päron" vara objekt av klassen frukt. Eller låt oss säga att vi skapar klassen "bil", då skulle "Volvo", "Audi" och "Toyota" vara objekt av klassen bil.
+
+En klass kan förklaras som en mall för ett objekt, och ett objekt är en instans av en klass.
+
+När ett enskilt objekt skapas så äver det alla egenskaper och beteenden från klassen, men varje objekt som skapas kan ha olika värden för dessa egenskaper.
 
 ## BE 1.3 Säkerhet i PHP
 **Vad är säkerhet?**

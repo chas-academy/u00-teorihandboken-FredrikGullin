@@ -1,5 +1,5 @@
 # Teorihandboken - Backendutveckling (BE)
-Studerande: Fredrik GUllin
+Studerande: Fredrik Gullin
 
 ## BE 1.1 PHP
 **Vad är PHP?**
@@ -235,8 +235,41 @@ Det enklaste sättet att förklara detta skulle kunna vara ett exempel där en w
 
 OAuth handlar därför mer om auktorisering än autentisering. Auktorisering innebär förfrågan om tillåtelse att göra saker och autentisering handlar om att bevisa ens identitet genom lösen ord etc. OAuth delar inte autentiseringsuppgifter mellan konsumenter och tjänsteleverantörer men agerar istället som auktoriserings-token.
 
+__Källa: https://www.varonis.com/blog/what-is-oauth__
+
 ## BE 1.9 HTTP-protokollet
-Beskriv rubriken här
+HTTP står för hypertext transfer protocol.
+
+HTTP är ett protokoll för att hämta resurser som HTML dokument. Det är grunden för allt datautbyte på webben och är ett klient-server protokoll, vilket innebär request som skickas har initierats av mottagaren, vanligtvis en webbläsare. Ett mottaget dokument rekonstrueras från olika deldokument som hämtas, t. ex. text, layoutbeskrivning, bilder, videor, skript med mera.
+
+Man kan säga att klienter och servrar kommunicerar genom att utbyta individuella meddelanden istället för en dataström. De meddelanden som skickas av klienten, vanligtvis en webläsare, kallas för förfrågningar och de meddelanden som skickas av servern kallas för svar.
+
+**Komponenter**
+Som tidigare nämnt är HTTP ett klient-server protokoll. Förfrågningar skickas av en enhet, användaragenten (eller en proxy på uppdrag av denna). Vanligvis är användaragenten en webbläsare, med det kan vara vad som helst, till exempel en robot som genomsöker webben för att fylla i och underhålla ett sökmotorindex.
+
+Varje enskild förfrågan skickas till en server som hanterar den och returnerar ett svar. Mellan klienten och servern finns det många enheter, gemensamt kallade proxyservrar, som utför olika operationer och fungerar t. ex. som gatewayes eller cachar.
+
+I verkligheten finns det fler komponenter mellan en webbläsare och servern som hanterar begäran så som routrar, modem med mera. Dessa är dock dolda i nätverks- och transportlagret på grund av webbens skiktade design. HTTP är övers i applikationslagret. Även om de är viktiga för att diagnostisera nätverksproblem, är de underliggande lagren för det mesta irrelevanta för beskrivningen av HTTP.
+
+**Klientsidan**
+Användaragenten är ett verktyg (vilket som helst) som agerar på uppdrag av användaren. Denna roll spelas oftast av en webbläsare, men kan också spelas av program som utvecklare och ingenjörer använder för att felsöka sina applikationer.
+
+Webbläsaren är alltid den enhet som initierar en förfrågan. Det är aldrig servern, även om det med åren har lagts till vissa mekanismer för att simulera server-initierade meddelanden.
+
+FÖr att visa en webbsida skickar webbläsaren en förfrågan om att hämta ett HTML dokument som sedan används för av webbläsaren för att konstruera sidan. Webbläsaren gör även ytterligare förfrågningar om exekveringsskript, layout (CSS) samt andra resurser som bilder och videor. När alla resurser hämtats kan sidan visas som helhet för användaren.
+
+En webbsida är ett hypertext dokument och vissa delar av det visade innehållet är länkar som kan aktiveras genom t. ex. att användaren klickar på dem vilket hämtar en ny webbsida. På detta sätt kan användaren dirigera sin användaragent och navigera genom webben. Webbläsaren översätter dessa anvisningar till HTTP-förfrågningar och tolkar HTTP-svaren ytterligare för att presentera detta för användaren.
+
+**Serversidan**
+På andra sidan av kommunikationen finns servern som serverar dokumentet enligt användarens begäran. En server brukar presenteras som en enda maskin men det kan ofta vara flera maskiner som delar serverns belastning. En server kan även vara en komplex mjukvara som kommunicerar med andra datorer (så som cache, en databas-server eller e-handelsservrar).
+
+En server är inte nödvändigtvis en enda maskin men det kan finnas flera serverprogramvaruinstanser på samma maskin.
+
+**TCP**
+Innan en klient och en server kan utbyta HTTP förfrågningar och svar behöver de etablera en TCP-anslutning. Standardbeteendet för HTTP/1.0 är att öppna en separat TCP-anslutning per förfrågan / svar. Detta är dock mindre effektivt än att dela en enda TCP-anslutning när flera förfrågningar skickas i en snabb följd.
+För att lindra denna brist introducerade HTTP/1.1 "pipelining" och beständiga anslutningar. HTTP/2 gick ett steg längre genom att multiplexera meddelanden över en enda anslutning, vilket bidrog till att hålla anslutningen varm och effektivare.
+
+__Källa: https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview__
 
 ## BE 1.10 cURL
 cURL är ett terminalverktyg som möjliggör utbyte av data mellan en enhet och en server genom en terminal. 
@@ -285,10 +318,48 @@ _cURL som egentligen uttalas curl är ett mycket enkelt, snabbt och bekvämt sä
 _Källa: Föreläsning "Dataformat curl och PHP inlogg" av Sebastian Lindgren den 19 januari 2023_
 
 ## BE 1.11 REST
-Beskriv rubriken här
+Ett REST API (även känt som RESTful API) är ett gränssnitt för applikationsprogrammering (API eller Webb-API) som överensstämmer med restriktionerna för REST arkitekturstil och möjliggör interaktion med RESTful webbtjänster. REST står för representational state transfer och skapades av Roy Fielding.
+
+**Vad är ett API?**
+Ett API är en uppsättning definitioner och protokoll för att bygga och interagera applikationsprogramvara och kan beskrivas på flera sätt. Det skulle kunna kallas för ett avtal mellan en informationsleverantör och en informationsanvändare - som upprättar och tillhandahåller det innehåll som krävs av användaren (förfrågan) och det innehåll som krävs av tillhandahålllaren (svaret). Designen av ett API kan t. ex. vara en väderapplikation där användaren anger sin plats och tjänsteleverantören svarar i ett två-delat svar, först den högsta tempraturen sedan den lägsta.
+
+Med andra ord används ett API för när man vill interagera med en dator eller ett system för att hämta information eller utföra en funktion. Likt en kypare i en restaurang som tar beställningar från gäster som sedan ges till kocken som lagar maten, hjälper ett API användaren att kommunicera vad hen vill ha av ett system på ett sätt som systemet kan förstå och således uppfylla begäran.
+
+**Vad är REST?**
+REST är en uppsättning arkitektoniska begränsningar. API-utvecklare kan implementera REST på en mängd olika sätt.
+
+När klienten gör en begäran via ett REST-API överför den en representation av resursens tillstånd till klienten. Denna information, eller representation, kan levereras i något av följande format via HTTP: JSON (Javascript Object Notation), HTML, XLT, Python, PHP eller ren text. JSON är generellt det mest populära alternativet. Detta då det är läsbart för både människor och maskiner.
+
+Utöver detta är "headers" och parametrar något som är viktigt att tänka på när det gäller HTTP metoder avsedda för REST APIer och förfrågningar till dessa. Dessa innehåller information som identifierar vad som efterfrågas, metadata, authorization, URI, caching, cookies med mera. Det finns headers för förfrågningar och för svar, vardera med dess egen HTTP-anslutningsinformation och statuskoder.
+
+__Källa: https://www.redhat.com/en/topics/api/what-is-a-rest-api__
 
 ## BE 1.12 XML och andra dataformat
-Beskriv rubriken här
+XML står för extensible markup language och är ett markup språk precis som HTML. XML skapades för att lagra och överföra data och är designat för att vara självbeskrivande.
+
+Det kan kännas svår att greppa men XML gör ingenting.
+
+Det här är ett meddelande till Tove från Jani fast i XML:
+
+<note>
+    <to>Tove</to>
+    <from>Jani</from>
+    <heading>Reminder</heading>
+    <body>Don't forget me this weekend!</body>
+</note>
+
+Det ovanstående XML exemplet är ganska självbeskrivande. Det har information om avsändaren, mottagaren, en rubrik och ett textmeddelande.
+
+Men koden i exemplet gör ingenting. Man kan säga att XML är information som slagits in i taggar. Man behöver någon typ av mjukvara för att kunna skicka, motta, lagra eller visa det.
+
+**Hur skiljer sig XML från HTML**
+XML och HTML har skapat med olika syften:
+
+* XML är skapat bära data med fokus på vad det är för slags data
+* HTML är skapat för att visa data med fokus på hur det presenteras
+* XML taggar är inte fördefinierade som HTMLs taggar.
+
+__Källa: https://www.w3schools.com/xml/xml_whatis.asp__
 
 ## BE 1.13 Webbservrar
 Ordet webbserver syftar både på själva datorn (hårdvaran) som används för ändamålet och även på det program som sköter innehållet och kommunikationen för tjänsten som servern tillhandahåller.

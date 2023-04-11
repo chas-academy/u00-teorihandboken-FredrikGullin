@@ -225,7 +225,15 @@ Relationsdatabaser har funnits sedan 1970-talet. Idag är det den mest vedertagn
 __Källa: https://www.oracle.com/database/what-is-a-relational-database/__
 
 ## BE 1.8 OAuth i backend
-Beskriv rubriken här
+OAuth är ett auktoriseringsprotokoll eller ramverk med öppen standard som ger applikationer möjligheten till "säker tilldelad åtkomst". Du kan t.ex. ge tillåtelse ESPN.com att komma åt din Facebook profil och skicka uppdateringar till din tidslinje utan att behöva ge ESPN ditt lösenord till ditt Facebook konto. Detta förhindrar att ditt lösenord hamnar i fel händer om ESPN skulle råka ut för ett dataintrång.
+
+OAuth delar inte lösenordsdata men tillhandahåller istället ett "auktoriserings-token" för identifikation mellan konsumenter och tjänsteleverantörer.
+
+OAuth är med andra ord ett autentiseringsprotokoll som ger dig möjligheten att godkänna att en applikation interagerar med en annan för din räkning utan att ge bort ditt lösenord.
+
+Det enklaste sättet att förklara detta skulle kunna vara ett exempel där en webbsida säger "Hej, vill du logga in på våran sida med en annan webbsidas inloggningsuppgifter?". I detta fall så är det enda den första webbsidan (utifrån konsumentens perspektiv) vill klargöra är att användaren (konsumenten) är samma person på båda webbsidorna, och att användaren lyckats logga in på den ursprungliga sidan (en annan tjänsteleverantör som t. ex. Facebook eller Google).
+
+OAuth handlar därför mer om auktorisering än autentisering. Auktorisering innebär förfrågan om tillåtelse att göra saker och autentisering handlar om att bevisa ens identitet genom lösen ord etc. OAuth delar inte autentiseringsuppgifter mellan konsumenter och tjänsteleverantörer men agerar istället som auktoriserings-token.
 
 ## BE 1.9 HTTP-protokollet
 Beskriv rubriken här

@@ -2,15 +2,47 @@
 Studerande: Fredrik GUllin
 
 ## BE 1.1 PHP
-Beskriv rubriken här
+**Vad är PHP?**
+PHP är akronym för "PHP: Hypertext Preprocessor" och är ett utbrett skriptspråk med öppen lällkod som används på serversidan (i backend) på en webbapplikation.
+
+PHP är kraftfullt och är kärnan i t. ex. Wordpress som är ett av världens största bloggsystem. PHP driver flera stora sociala nätverksapplikationer och är lätt för nybörjare att lära sig.
+
+**Hur är PHP uppbyggt och funktionalitet?**
+PHP-filer kan innehålla text, HTML, CSS, Javascript och PHP. PHP-kod exekveras på servern och resultatet returneras till webbläsaren som vanlig HTML. PHP-filer har tillägget ".php".
+
+PHP kan användas för att generera dynamiska webbsidor. PHP kan även skapa, öppna, läsa, skriva, ta bort och stänga filer på servern. Utöver detta kan PHP även samla in formulärdata, skicka och ta emot "cookies", hantera databaser (lägga till, ändra och ta bort data) samt utifrån ett säkerhetsperspektiv kontrollera och administrera användar åtkomst och kryptering av data.
+
+PHP är inte begränsat till HTML. Man kan också mata ut bilder eller PDF-filer samt mata ut vilken text som helt som t. ex. XHTML och XML.
+
+**Fördelar**
+* PHP kan köras på olika plattformar (Windows, Linux, Unix, Mac OS X med mera)
+* PHP är kompatibelt med nästan alla servrar som används idag (Apache, IIS, etc)
+* PHP stöder ett brett utbud av databaser
+* PHP är gratis och kan laddas ner från www.php.net
+* PHP är lätt att lära sig och körs effektivt i backend
+
+**Utseende**
+PHP skrivs mellan specifika PHP-tags som ser ut på följande sätt:
+
+<?php
+
+$txt = "PHP";
+
+echo "$txt är ett fantastiskt skriptspråk!";
+
+?>
+
+Dollar ($) tecken anvnds när man vill deklarera en variabel. Som $txt i exemplet ovan som tilldelas värdet PHP som sedan används för att skriva ut "PHP är ett fantastiskt skriptspråk!".
+
+__Källa: https://www.w3schools.com/php/php_intro.asp__
+
 
 ## BE 1.2 OOP i PHP
 Beskriv rubriken här
 
 ## BE 1.3 Säkerhet i PHP
-
 **Vad är säkerhet?**
-Det man brukar prata om är applikationssäkrehet va IT-säkerhet.
+Det man brukar prata om är applikationssäkrehet vs IT-säkerhet.
 
 * Applikationssäkerhet: Hur vi säkrar information och skyddar delar i vår applikation från attacker. Med andra ord applikationens egen säkerhet.
 * IT-säkerhet: Hur vi skyddar, konfigurerar och ser till att våra system (fysiska och digitala) är säkra.

@@ -46,6 +46,8 @@ Git kan användas oftast med en linux-terminal (eller med Git Bash för Windows)
 
 För att se några exempel på grundläggande kommandon i git terminalen kan man besöka denna sida: [Atlassian - Git commands](https://www.atlassian.com/git/glossary).
 
+__När man arbetar i grupp med större projekt kan det vara bra att ha en strategi för versionshantering. En populär strategi är att arbeta med "git flow". Detta går ut på att man skapar en branch som kallas main som är för produktion, en branch för utveckling som kallas develop och en branch för varje feature man arbetar med, en så kallad "feature branch". En feature kan t. ex. vara att skapa en funktion för något eller någon komponent i projektet. När denna är klar pushas denna upp till repot av utvecklaren som skapat branchen. Därefter görs ett "pull request" där utvecklaren ber någon av kollegorna att inspektera koden och om det finns några problem eller konflikter med övrig kod (en så kallad merge conflict) kan detta lösas innan featuren blir mergead in i develop branchen där projektet existerar i utvecklingsstadie. På detta sätt kan man se till att gruppmedlemmarna inte skriver över varandras kod när de mergar sina tillägg. När develop branchen är redo att mergas med main så uppdateras eller deployas själva applikationen i produktionsläge. Git flow är mycket effektivt och användbart.__
+
 _Källa: https://git-scm.com/book/sv/v2/Kom-ig%C3%A5ng-Om-versionshantering_
 
 ## PG 1.2 Benchmarking

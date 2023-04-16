@@ -78,7 +78,38 @@ __Källa: https://www.planview.com/se/resources/guide/introduction-to-kanban/__
 __Källa: https://projektforum.se/xp-extreme-programming/__
 
 ## PJ 1.2 Icke-agila metoder
-Beskriv rubriken nedan här
+Det finns ett antal icke-agila metoder. Jag har valt att beskriva vattenfallmetoden för att reda ut vad en icke-agil metod är.
+
+**Waterfall metoden**
+Waterfall metoden eller vattenfallmetoden som det kallas på svenska är en icke-agil projektledningsmetod som betonar en linjär progression från början till slutet av ett projekt. Denna metokdik, som ofta används av ingenjörer, förlitar sig på noggrann planering, detaljerad dokumentation och steg som utförs i en följd.
+
+Vattenfallmetoden använder en logisk progression av steg, på samma sätt som vatten rinner över kanten på en klippa, och går ut på att sätta distinkta mål för varje utvecklingsfas. Dessa mål kan inte göras om efter dessa har upnåtts.
+
+Dr. Winston W. Royce vid Lockheed Software Technology Center introducerade konceptet i en artikel publicerad 1970 om hans erfarenhet av att utveckla programvara för satelliter. Royce använde dock inte termen vattenfall, utan hänvisade istället till nedströmsvärdet av dokumentation.
+
+Vattenfallsmetoden forsätter att användas i industriella designapplikationer. Det nämns ofta som den första metodiken för mjukvaruutveckling. Metoden används också mer generellt som en projektledningsmetodik på hög nivå för komplicerade och mångfacetterade projekt.
+
+**Fördelar med vattenfallmetoden**
+* Möjliggör för ett stort team att arbeta mot samma mål som har definierats i kravstadiet
+* Tvingar fram struktur och diciplin inom organisationen
+* Enkelt att förstå, ordna och följa uppgifter
+* Underlättar avdelningsfördelning och ledningskontroll baserat på schemat eller deadlines
+* Definierar kodstandard innan design och kod implementeras
+* Möjliggör tidig design av systemet och underlättar specifikationsändringar
+* Tydliga milstolpar och deadlines
+
+**Nackdelar med vatenfallmetoden**
+* Designen är inte anpassningsbar
+* När ett fel upptäcks måste hela processen börja om
+* Metoden innehåller inte feedback från användare eller klienter under processens gång
+* Metoden fördröjer testning till slutet av processen
+* Metoden tar inte hänsyn till felkorrigering
+* Metoden har mycket begränsade möjligheter att hantera förfrågningar om ändringar, omfattningsjusteringar eller uppdateringar
+* Vattenfallmetoden låter inte processer överlappa varandra för samtidigt arbete i olika faser, vilket leder till lägre effektivitet
+* Ingen fungerande produkt är tillgänglig förrän de senare stadierna av projektets livscykel
+* Vattenfallmetoden är inte idealisk för komplexa pågående projekt med hög risk
+
+__Källa: https://www.techtarget.com/searchsoftwarequality/definition/waterfall-model__
 
 ## PJ 1.3 Entreprenörskap inom webbutveckling
 Beskriv rubriken nedan här

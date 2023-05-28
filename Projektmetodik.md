@@ -112,7 +112,50 @@ Vattenfallsmetoden forsätter att användas i industriella designapplikationer. 
 __Källa: https://www.techtarget.com/searchsoftwarequality/definition/waterfall-model__
 
 ## PJ 1.3 Entreprenörskap inom webbutveckling
-Beskriv rubriken nedan här
+Om man vill bli en entreprenör och starta ett företag inom webbutveckling finns det en mängd saker att överväga innan man kör igång. Utöver gedigna kunskaper om webbutvecklingsteknologier bör man även ha stark förståelse för branchen samt kunna identifiera en potentiells kunds specifika behov samt ha förmåga att bygga långsiktiga affärsrelationer. Att ha god branchförståelse möjliggör god planering. En välgjord affärsplan kan hjälpa till med tydligt definierade mål och framtagandet av strategier för tillväxt, vilket är en grundläggande förutsättning för att lyckas.
+
+Med det sagt är det bra om man bl.a. skapa sig en uppfattning om vilka kostnader som kan uppstå och därmed förstå hur prissättningsstrukturen bör se ut.
+
+**Företagskostnader**
+* Före öppnandet av företaget
+    * Affärsplan och kostnader för efterforskning
+    * Lånekostnader
+    * Startkostnade
+    * Teknologiska / materialkostnader
+* Företagets dagliga kostnader
+    * Marknadsföring
+    * Lönekostnader
+    * Försäkrings- och licenskostnader
+    * Ytterligare material / tegonoliska kostnader
+
+Man bör även ha en bra idé om vad man vill göra och profilera företaget utifrån detta. Detta är viktigt för att kunna skapa ett "helhets koncept" eller en "signatur" vilket skapar en känsla av baknatskap hos potentiella kunder. Som webbutvecklare kan man ta en multitud av olika uppdrag och detta behöver inte vara begränsat till att utveckla webbsidor.
+
+Det är även bra att överväga vilka kostnader som finns i ett projekt för att kunna avgöra en budget.
+
+**Projektkostnader**
+* Vilken stack används i projektet
+* Komplexiteten i projektets olika delar
+* Hur mycket UX/UI och annat förarbete som behöver göras
+
+Dessa är de initiala avgörande faktorerna för projektets kostnad.
+
+**Intäktsmodeller**
+Några förslag på hur ett företag kan tjäna pengar inom webbutveckling:
+
+* Serviceavtal / maintenance - Månadsavgift / bindningstid
+* Licenskostnader
+* Projektpris
+
+**Prissättning**
+Förslag på prissättning:
+
+* Vad är kunden berädd att betala?
+* Hur stort är behovet?
+* Vad kostar konkurrentens lösningar?
+
+_Hitta en bra revisor!_
+
+_Källa: Föreläsning den 24 maj 2023 med Sebastian Lindgren_
 
 ## PJ 1.4 Issue handling
 Beskriv rubriken nedan här

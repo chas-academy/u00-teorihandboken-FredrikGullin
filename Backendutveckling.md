@@ -179,6 +179,17 @@ Med Wordpress kan man använda anpassade teman och plugins, webbplatsen som skap
 
 Wordpress skapades 2003 av Mike Little och Mike Mullenweg. Plattformen är enkel, flexibel och kan användas av vem som helst. Det finns ett flertal kända företag vars webbsidor har skapats med Wordpress så som Sony Music, Variety, Time och Disney med flera.
 
+**Fördelar med Wordpress**
+    1. Användargränssnitt och flexibilitet: WordPress erbjuder ett användarvänligt gränssnitt som gör det enkelt att skapa och hantera webbplatser. Det har en intuitiv administrationspanel där användare kan skapa, redigera och publicera innehåll utan att behöva ha djupgående teknisk kunskap. Dessutom är WordPress flexibelt och skalbart, vilket gör det möjligt att skapa allt från enklare bloggar till mer komplexa webbplatser och till och med e-handelsplattformar.
+
+    2. Stort urval av teman och plugins: WordPress har ett omfattande bibliotek med teman och plugins som ger användare möjlighet att anpassa och utöka funktionaliteten på sina webbplatser. Teman styr utseendet och layouten, medan plugins lägger till extra funktioner och verktyg. Det finns tusentals gratis och premium-teman och plugins tillgängliga, vilket gör det möjligt att skapa unika och professionella webbplatser.
+
+    3. Aktiv och stödjande community: WordPress har en stor och engagerad community av utvecklare, användare och supportteam som aktivt bidrar till plattformens tillväxt och utveckling. Det finns många forum, användargrupper och online-resurser där användare kan hitta svar på sina frågor, få support och delta i diskussioner om WordPress-relaterade ämnen.
+
+    4. SEO-vänligt: WordPress är känt för sin goda sökmotoroptimering (SEO). Plattformen är byggd med ren och semantisk kod, vilket är fördelaktigt för att uppnå bättre sökresultat. Dessutom finns det plugins som specifikt fokuserar på att förbättra SEO-funktionaliteten och hjälper användare att optimera sina webbplatser för att ranka högre i sökmotorer.
+
+    5. Ständiga uppdateringar och säkerhet: Eftersom WordPress är öppen källkod, är det en aktivt underhållen plattform. Det betyder att det kontinuerligt släpps uppdateringar och säkerhetsförbättringar för att hålla webbplatser säkra och skyddade mot potentiella hot. Det är viktigt att regelbundet uppdatera WordPress-versionen och eventuella teman och plugins för att dra nytta av de senaste förbättringarna och säkerhetspatcharna.
+
 __Källa: https://www.bluehost.com/blog/what-is-wordpress/?psafe_param=1&utm_campaign=affiliate-link_searchgenericpromo_PPC&utm_source=direct&utm_medium=affiliate&utm_affiliate=searchgenericpromo&irpid=101&clickid=P61C101S570N0B5578A2D4499E0000V261&pb=signup_searchgenericpromo&siteid=101&channelid=P61C101S570N0B5578A2D4499E0000V261&gclid=CjwKCAjwitShBhA6EiwAq3RqA_zhqO_oZwf93gDJXDyXctbwvtMdIUZiALn8dKpBMgYX1Dh1jmKflhoCdWoQAvD_BwE&gclsrc=aw.ds__
 
 ## BE 1.6 Heirarkiska databaser
@@ -232,6 +243,14 @@ OAuth delar inte lösenordsdata men tillhandahåller istället ett "auktoriserin
 OAuth är med andra ord ett autentiseringsprotokoll som ger dig möjligheten att godkänna att en applikation interagerar med en annan för din räkning utan att ge bort ditt lösenord.
 
 Det enklaste sättet att förklara detta skulle kunna vara ett exempel där en webbsida säger "Hej, vill du logga in på våran sida med en annan webbsidas inloggningsuppgifter?". I detta fall så är det enda den första webbsidan (utifrån konsumentens perspektiv) vill klargöra är att användaren (konsumenten) är samma person på båda webbsidorna, och att användaren lyckats logga in på den ursprungliga sidan (en annan tjänsteleverantör som t. ex. Facebook eller Google).
+
+För att förklara processen mer detaljerat kan vi använda exemplet med att logga in på en webbplats med ditt Google-konto:
+
+    1. Du väljer att logga in på webbplatsen och blir omdirigerad till Googles inloggningssida.
+    2. Du anger dina inloggningsuppgifter (användarnamn och lösenord) direkt på Googles inloggningssida.
+    3. Google autentiserar dina uppgifter och skapar ett åtkomsttoken för webbplatsen du försöker logga in på.
+    4. Webbplatsen tar emot åtkomsttokenet från Google och verifierar det.
+    5. Om tokenet är giltigt och verifieringen lyckas, får du åtkomst till webbplatsen utan att behöva dela dina Google-inloggningsuppgifter med den.
 
 OAuth handlar därför mer om auktorisering än autentisering. Auktorisering innebär förfrågan om tillåtelse att göra saker och autentisering handlar om att bevisa ens identitet genom lösen ord etc. OAuth delar inte autentiseringsuppgifter mellan konsumenter och tjänsteleverantörer men agerar istället som auktoriserings-token.
 
@@ -337,6 +356,8 @@ __Källa: https://www.redhat.com/en/topics/api/what-is-a-rest-api__
 ## BE 1.12 XML och andra dataformat
 XML står för extensible markup language och är ett markup språk precis som HTML. XML skapades för att lagra och överföra data och är designat för att vara självbeskrivande.
 
+XML är ett språk som främst används för att strukturera och överföra data mellan olika system och plattformar. Det är plattformsoberoende och kan läsas och tolkas av olika applikationer och programvara. XML-data kan användas för att utbyta information mellan olika webbtjänster, system och databaser.
+
 Det kan kännas svår att greppa men XML gör ingenting.
 
 Det här är ett meddelande till Tove från Jani fast i XML:
@@ -358,6 +379,8 @@ XML och HTML har skapat med olika syften:
 * XML är skapat bära data med fokus på vad det är för slags data
 * HTML är skapat för att visa data med fokus på hur det presenteras
 * XML taggar är inte fördefinierade som HTMLs taggar.
+
+En av XML: s stora fördelar är dess flexibilitet. Till skillnad från HTML, som har fördefinierade taggar för specifika ändamål, kan XML-användare själva definiera sina egna taggar och strukturer för att passa sina specifika behov. Detta gör XML mycket anpassningsbart och kan användas för att representera komplexa datastrukturer och hierarkier.
 
 __Källa: https://www.w3schools.com/xml/xml_whatis.asp__
 

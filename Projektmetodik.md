@@ -118,7 +118,7 @@ Med det sagt är det bra om man bl.a. skapa sig en uppfattning om vilka kostnade
 
 **Företagskostnader**
 * Före öppnandet av företaget
-    * Affärsplan och kostnader för efterforskning
+    * Affärsplan och kostnader för efterforskning (marknadsanalys med mera)
     * Lånekostnader
     * Startkostnade
     * Teknologiska / materialkostnader
@@ -153,9 +153,52 @@ Förslag på prissättning:
 * Hur stort är behovet?
 * Vad kostar konkurrentens lösningar?
 
-_Hitta en bra revisor!_
+**Kundrelationer**
+Det är viktigt att upprätta bra relationer till kunder och som entreprenör är det givande att jobba utifrån kundfokuserade metoder. Att lyssna på kundens behov och ge utmärkt kundservice kan bidra till att bygga långsiktiga affärsrelationer.
+
+**Team och partnerskap**
+Att ha rätt team eller partners kan vara avgörande för hur framgångsrikt ett företag blir. Hitta likasinnade personer som du har förtroende för.
+
+**Marknadsföringsstrategier**
+Detta kan handla om digital marknadsföring, sociala medier, nätverksevenemang och kampanjer med mera.
+
+**Utbildning och uppdatering av färdigheter**
+Som entreprenör inom webbutveckling är det viktigt att hålla sig uppdaterad med de senaste teknologierna och trender. Detta bör göras genom kontinuerlig utbildning och självstudier. Att ha bra koll på läget bidrar till att företaget behåller sin konkurrenskraft.
+
+**Portfolio**
+Skapa en portfolio där företaget kan visa upp sina tidigare arbeten och projekt. På så vis kan företaget visa upp vad som kan erbjudas / förväntas på ett tilltalande sätt.
+
+**Bokföring**
+Sist men inte minst _Hitta en bra revisor!_
 
 _Källa: Föreläsning den 24 maj 2023 med Sebastian Lindgren_
 
 ## PJ 1.4 Issue handling
-Beskriv rubriken nedan här
+Inom projektmetodik och webbutveckling syftar "issue handling" till processen att identifiera, hantera och lösa problem / utmaningar som kan uppstå under projektets gång. Ett "issue" kan vara en uppgift som ska lösas under utvecklingsprocessen eller en situation / problem som påverkar projektets framsteg eller resultat negativt.
+
+Issue handling brukar involvera följande steg:
+
+* Identifiering och dokumentation av uppgiften / problemtet (t.ex. tekniska svårigheter / buggar / missförstånd mellan leverantör och kund)
+* Värdera och prioritera, det är viktigt att skapa en uppfattning om vad som behöver lösas först
+* Analysera problemet och skaffa förståelse för orsakerna till problemet (t.ex. utvärdera påverkan av ändrade krav)
+* Ta fram adekvata lösningar till problemet och kommunicera detta till kunden
+* Utveckla lösningarna och implementera dessa i projektet samt utför tester
+* Övervaka hur lösningen fungerat och ta in feedback från t.ex. användare / kund (gör uppföljningar)
+
+Genom att hantera uppgifter, problem och utmaningar på ett strukturerat sätt genom issue handling-processen kan teamet minimera störningar och se till att projektet håller sig på spåret. Detta bidrar även till ökat förtroende från kunder vilket också ger en högre "kundnöjdhet".
+
+Ett bra sätt att organisera issue handling är att använda en Kanban board. En Kanban board består vanligtvis av kolumner som representerar olika stadier i arbetsflödet som t.ex. "backlog / att göra", "pågående", "klart".
+
+Fördelar med att använda en Kanban board:
+
+* Visualisering - det är enkelt att se vart i arbetsflödet en issue befinner sig
+* Prioritet - det är lätt att se vilken prioritet ett issue har
+* Samarbete - det är enkelt för teamet att se vem som gör vad samt vilken status ett pågående issue har
+* Kontinuerlig förbättring - teamet kan identifiera flaskhalsar och förseningar i issue handling-processen och därefter vidta åtgärder för att optimera arbetsflödet
+* Transparens - en Kanban board ger tydlighet och transparens i projektets framsteg för alla inblandade
+
+Med det sagt är en Kanban board ett mycket bra verktyg för att hantera issue handling.
+
+_Källa: https://www.lucidchart.com/blog/what-is-issue-management_
+
+_Källa: https://www.planview.com/se/resources/guide/introduction-to-kanban/_

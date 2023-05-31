@@ -191,14 +191,27 @@ Ett bra sätt att organisera issue handling är att använda en Kanban board. En
 
 Fördelar med att använda en Kanban board:
 
-* Visualisering - det är enkelt att se vart i arbetsflödet en issue befinner sig
-* Prioritet - det är lätt att se vilken prioritet ett issue har
-* Samarbete - det är enkelt för teamet att se vem som gör vad samt vilken status ett pågående issue har
-* Kontinuerlig förbättring - teamet kan identifiera flaskhalsar och förseningar i issue handling-processen och därefter vidta åtgärder för att optimera arbetsflödet
-* Transparens - en Kanban board ger tydlighet och transparens i projektets framsteg för alla inblandade
+* Visualisering - Det är enkelt att se vart i arbetsflödet en issue befinner sig
+* Prioritet - Det är lätt att se vilken prioritet ett issue har
+* Samarbete - Det är enkelt för teamet att se vem som gör vad samt vilken status ett pågående issue har
+* Kontinuerlig förbättring - Teamet kan identifiera flaskhalsar och förseningar i issue handling-processen och därefter vidta åtgärder för att optimera arbetsflödet
+* Transparens - En Kanban board ger tydlighet och transparens i projektets framsteg för alla inblandade
 
-Med det sagt är en Kanban board ett mycket bra verktyg för att hantera issue handling.
+Med det sagt är en Kanban board ett mycket bra verktyg för att hantera issue handling.**
+
+**Github issues & issue handling**
+Github issues är ett verktyg som tillhandahålls av Github och är anpassat för utvecklare. Tanken är att Github issues ska hjälpa utvecklarna att bryta ner stora problem i mindre uppgifter (issues) som kan fördelas över teamet. Verktyget hjälper även till med god översikt av projektet som helhet, status för olika issues, vem som gör vad samt med versionshantering, commits, pull requests och "merging" av features.
+
+Processen för issue handling med Github issues kan sammanfattas på följande sätt:
+
+1. Skapa en issue - Kan vara ett problem, en idé eller ett förbättringsförslag. Man kan även lägga till en beskrivning av en issue.
+2. Tilldela - En issue kan tilldelas till specifika personer inom teamet som då ansvarar för denna issue. Man kan även tilldela en etikett som stöd för att organisera och katigorisera hanteringen av en issue, t.ex. bug, förbättring, idé etc.
+3. Samarbete - Andra medlemmar i teamet kan kommentera en issue och på så vis delta i diskussionen kring denna.
+4. Arbetsflöde - Github issues har inbyggd funktionalitet för att organisera arbetsflödet för issues. En issue kan tilldelas med en specifik status som öppen, pågående eller avslutad vilket hjälper till med att hålla koll på vad teamet behöver fokusera på.
+5. Referenser - Om en issue är relaterad till en annan issue kan man lägga till en referens så att det framgår att dessa issues hör ihop.
+6. Avsluta - När en issue är löst eller när diskussionen om en issue nått en slutsats kan man stänga denna. Issuen får då statusen avklarad vilket indikerar att den inte behöver mer uppmärksamhet.
 
 _Källa: https://www.lucidchart.com/blog/what-is-issue-management_
-
 _Källa: https://www.planview.com/se/resources/guide/introduction-to-kanban/_
+_Källa: https://github.com/features/issues_
+_Källa: https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart_

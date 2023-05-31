@@ -98,7 +98,38 @@ _Källa: Föreläsning den 2 november 2022 av Sebastian Lindgren_
 Källa: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming
 
 ## JS 1.5 DOM-manipulation
-Beskriv rubriken här
+DOM står för Document Object Model och är ett programmeringsgränssnitt som representerar och interagerar med HTML-dokumentet i webbläsaren. Allt du ser på skärmen när du surfar med din webbläsare respresenteras av DOM:en. Detta har ungefär samma struktur som ett träd som skapas av webbläsaren och möjliggör enkel åtkomst för manipulation av detta med programmeringsspråk.
+
+När man skapar hemsidor eller applikationer är DOM-manipulation ett av de vanligaste åtagandena. Detta görs genom att använda DOM:en som består av en uppsättning av API:er som används för att kontrollera, manipulera, designa DOM-documentet. 
+
+DOM-manipulation i JavaScript handlar om att ändra och manipulera elementen i innehållet i HTML-dokumentet genom att använda JavaScript-kod.
+
+Genom att använda JavaScript kan man välja specfika HTML-element och därefter ändra deras innehåll och egenskaper, eller lägga till och ta bort element. På detta sätt kan man även hantera "events" och användarinteraktion i webbläsaren.
+
+**Här är ett några exempel på DOM-manipulation i JavaScript**
+![Kod exempel](./Pictures-JavaScript/exempelDOM-manipulation.jpg)
+
+I exemplet ovan använder vi olika metoder för att manipulera DOM:en:
+
+**document.getElementById()**
+Används för att hämta referensen till ett element med dess ID ("myElement"). Sedan ändrar vi elementets egenskaper genom att tilldela nya värden till "style"-attributet. 
+
+**innerHTML**
+Används för att ändra innehållet i elementet.
+
+**document.createElement()**
+Används för att skapa ett nytt element. Det nya elementet tilldelas därefter egenskaper med ".textContent".
+
+**document.body.appendChild()**
+Används för att lägga till ett element i DOM:en. "newElement" läggs då till som barn till "document.body".
+
+**removeChild()**
+Används för att ta bort ett element från DOM:en. Först ser vi till att välja "oldElement" med document.getElementById() och därefter ta bort elementet med "oldElement.parentNode.removeChild(oldElement);".
+
+Sammanfattningsvis kan man säga att DOM-manipulation möjliggör dynamisk interaktion och uppdatering av webbsidor i realtid.
+
+_Källa: Föreläsning den 7 november 2022 av Sebastian Lindgren_
+Källa: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
 
 ## JS 1.6 HTTP-requests
 Beskriv rubriken här

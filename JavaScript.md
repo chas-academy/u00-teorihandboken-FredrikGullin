@@ -59,6 +59,8 @@ Man använder metoden ".catch()" för att fånga upp och hantera eventuella fel 
 
 Man använder ".then()" metoden för att hantera ett promise som har statusen "fullfilled", det vill säga när den asynkrona funktionen har slutförts och returnerat ett resultat. Metoden .then() tar emot en callback-funktion som kommer att köras när promise-objektet är uppfyllt. Resultatet av promise-objektet skickas in i callback-funktionen som ett argument och kan sedan hantera resultatet och använda det i koden.
 
+**Exempel**
+
 ![Kod exempel](./Pictures-JavaScript/exempleCatchThen.jpg)
 
 Med promises kan man utföra asynkrona operationer och sedan behandla resultatet (eller felet) när det blir tillgängligt vilket möjliggör mer elegant kodhantering.
@@ -68,7 +70,32 @@ _Källa: Föreläsning den 3 november 2022 av Sebastian Lindgren_
 Källa: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 
 ## JS 1.4 OOP i JavaScript
-Beskriv rubriken här
+OOP står för objektorienterad programmering. Inom JavaScript är OOP en programmeringsparadigm där kod och data organiseras i objekt, som kan fungera som byggstenarna för att skapa applikationer, och bygger på koncept som objekt, klasser, arv och inkapsling.
+
+**Konstruktorn och nyckelordet "new"**
+I JavaScript skapas objekt genom att använda konstruktorfunktioner. Dessa används för att skapa objekt med gemensamma egenskaper och metoder genom att använda nyckelorder "new" och en funktion som generar en mall för att skapa instanser av objekt.
+
+**Klasser**
+Klasser introducerades i ECMAScript 2015 (ES6) och erbjuder en mer formell och strukturerad metod för att skapa objekt i JavaScript. En klass fungerar som "blueprint" för objekt och kan innehålla en konstruktor, metoder och egenskaper. Genom att använda klasser kan man skapa flera objekt av samma typ med gemensamma egenskaper och metoder.
+
+**Arv**
+Arv är ett vanligt koncept inom OOP som möjliggör återanvändning av kod genom att låta ett objekt ärva egenskaper och metoder från ett annat objekt. Varje objekt har en prototyp som fungerar som en referens till det objekt som det ärver ifrån. Genom att lägga till egenskaper och metoder till en prototyp kan de delas av alla objekt som ärver från den.
+
+**Inkapsling**
+Inkapsling handlar om att skydda och isolera egenskaper och metoder från direkt åtkomst och att dessa ändras. Genom att använda privata variabler och metoder som bara är tillgängliga inom en viss sfär eller ett visst "scope" kan man kontrollera åtkomsten till dessa.
+
+**Fördelar med OOP**
+De här är de främsta fördelarna med OOP i JavaScript:
+
+1. Återanvändbarhet
+2. Underlättar underhåll av kod
+3. Bättre struktur av kod
+4. Bättre skalbarhet
+
+Objektorienterad design gör det möjligt att dela upp kod i mindre och mer hanterbara delar.
+
+_Källa: Föreläsning den 2 november 2022 av Sebastian Lindgren_
+Källa: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_programming
 
 ## JS 1.5 DOM-manipulation
 Beskriv rubriken här

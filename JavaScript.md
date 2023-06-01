@@ -164,7 +164,7 @@ I Lexical scope avgörs variabelåtkomsten baserat på var en variabel är dekla
 
 En viktig aspekt av detta är att åtkomsten till en variabel bestäms när den deklareras och inte när programmet körs (exekveringstid). Det innebär att när en funktion skapas, så skapas även dess scope med alla variabler som är tillgängliga för den. Detta gäller även om funktionen i sig senare körs på en annan plats. Funktionen behåller då variabler som deklarerats i dess ursprungliga scope.
 
-Ett scope kan se ut på följande sätt:
+**Ett scope kan se ut på följande sätt:**
 
 function outer() {
     const x = 10;
@@ -181,12 +181,36 @@ outer();
 
 I den yttre funktionen har vi deklarerat variabeln "x" och i den inre funktionen deklarerar vi variabeln "y". **Den inre funktionen har åtkomst till både x och y då eftersom de ligger inom den yttre funktionens scope. Medan den yttre funktionen endast har åtkomst till x.**
 
-
-
 _Källa: https://www.freecodecamp.org/news/javascript-lexical-scope-tutorial/_
 
 ## JS 1.8 Event handling
-Beskriv rubriken här
+En eventhandler är ett kodblock som körs när ett event inträffar. Dessa kan vara definierade av utvecklarna som skriver applikationen.
+
+**En eventhandler kan se ut på följande sätt:**
+![Kod exempel](./Pictures-JavaScript/exempelEventHandler.jpg)
+
+Som min extraordinärt bra och coola lärare en gång sa. - _"Det kan vara trevligt att programatiskt lägga till en event handler. Det kan även vara trevligt att ha flera events tillagda till samma element. För detta ändamål används eventlisteners."_
+
+Med en eventlistener kan man lägga till events till hela HTML-DOM objektet (inklusive Window). Därav kan man ha flera event av samma typ på ett element. En eventlistener lyssnar på events och väntar på att något ska hända, t.ex. ett klick, någon scrollar eller trycker på en tangent, börjar fylla i ett formulär, hovrar över en bild etc.
+
+**För att lägga till en eventlistener använder man följande syntax:**
+
+element.addEventListener("mouseover", myFunction);
+
+Det finns olika sorters eventlisteners. Här är några fler exempel:
+
+element.addEventListener("mouseover", myFunction);
+
+element.addEventListener("click", mySecondFunction);
+
+element.addEventListener("mouseout", myThirdFunction);
+
+Event handling används också för att hantera bubbling och capture i händelseflödet. Bubbling innebär att när en händelse inträffar på ett element, bubblar den upp genom elementets föräldrar i DOM-trädet. Capture är motsatsen, där händelsen först fångas av det yttersta elementet och sedan propagaterar nedåt genom elementens föräldrar.
+
+Sammanfattningsvis är event handling en viktig del av JavaScript-programmering för att skapa interaktiva och responsiva webbsidor och applikationer. Genom att registrera event handlers och lyssna på olika händelser kan man reagera på användarens interaktion och utföra olika åtgärder baserat på dessa händelser. Event handling ger en flexibel och kraftfull mekanism för att skapa dynamiska och engagerande användargränssnitt.
+
+_Källa: Föreläsning den 7 november 2022 av Sebastian Lindgren_
+_Källa: https://javascript.info/bubbling-and-capturing_
 
 ## JS 1.9 Prototype inheritance
 Beskriv rubriken här

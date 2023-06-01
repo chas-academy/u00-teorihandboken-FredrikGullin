@@ -213,7 +213,51 @@ _Källa: Föreläsning den 7 november 2022 av Sebastian Lindgren_
 _Källa: https://javascript.info/bubbling-and-capturing_
 
 ## JS 1.9 Prototype inheritance
-Beskriv rubriken här
+För att vår kod ska vara så "DRY" (Don't Repeat Yourself) som möjligt kan vi låta objekt ärva egenskaper och metoder från andra objekt.
+
+**Exempel**
+```
+const Animal = function (sound) {
+    this.makeSound = function () {
+        console.log(sound);
+    }
+};
+
+const Dog = function (name, breed) {
+    this.name = name;
+    this.breed = breed;
+};
+
+Dog.prototype = new Animal ('woof');
+const dog = new Dog('Lassie', 'Collie');
+
+dog.makeSound();
+```
+I det ovanstående exemplet kan vi se hur "Dog" använder funktionen makeSound() från Animal.
+
+JavaScript är ett prototypbaserat språk. Detta innebär att alla objekt kan ha ett prototyp-objekt. Ett prototyp-objekt kan beskrivas som en mall som man kan använda när man skapar nya objekt. De nya objekten kan då ärva egenskaper och metoder från prototyp-objektet. I JavaScript ärver objekt egenskaper från "förälder-objektet".
+
+**Exempel**
+```
+function Person(name) {
+    this.name = name;
+    this.greeting = function () {
+        alert("Hi! I'm" + this.name + ".");
+    };
+}
+
+let person3 = new Person("Bjorn");
+person3.greeting();
+```
+I ovanstående exempel ser vi hur persona3 ärver metoden greeting och egenskapen name från Person och får därmed åtkomst till- och kan använda dessa. Person är således mall (prototyp) för person3.
+
+Det finns två huvudsakliga koncept inom prototype inheritance:
+
+1. Varje funktion i JavaScript har en prototype property som är tom från början. Denna används huvudsakligen för arv, man lägger således till metoder och egenskaper på en funktions prototyp-property för att göra metoderna tillgängliga för eventuella instanser.
+
+2. Prototype attribute ger information om ett objekts förälder, med andra ord objektet som det nya objektet ärver sina egenskaper från. Förälder objektet kallas ofta för prototype object.
+
+_Källa: Föreläsning den 31 oktober 2022 av Sebastian Lindgren_
 
 ## JS 1.10 Higher-order functions
 Beskriv rubriken här

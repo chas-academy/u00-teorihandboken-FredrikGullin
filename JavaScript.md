@@ -141,6 +141,8 @@ För att göra ett HTTP-request i JavaScript finns olika metoder. Den vanligaste
 
 I exemplet används "fetch()" för att göra en GET-request till "https://api.example.com/data". Därefter används ".then()" för att hantera det svar som returneras från servern, eller "catch()" för att hantera eventuella fel som returnerats från servern.
 
+En fördel med att använda fetch()-metoden är att den är inbyggd i moderna webbläsare och därmed inte kräver några externa bibliotek eller ramverk för att fungera. Dessutom stöder fetch() promises, vilket ger en smidigare och mer läsbar kodstruktur genom att använda .then()- och .catch()-metoderna för att hantera responsen och eventuella fel.
+
 HTTP-requests kan också användas för att skicka data till servern, t.ex. genom att använda en HTTP-POST-request.
 
 **POST exempel**
@@ -148,7 +150,7 @@ HTTP-requests kan också användas för att skicka data till servern, t.ex. geno
 
 I exemplet ovan skickas data i JSON-format till "https://api.example.com/users" genom en POST-request. "JSON.stringify()" används för att konvertera dataobjektet till en JSON-string. Vi använder även "headers" för att specificera innehållets typ och metod vilket tydliggör att det handlar om en POST-request.
 
-Det finns ytterligare HTTP-request som t.ex. PUT och DELETE som kan användas för att skicka ett request för att ut föra någon form av CRUD-funktion mot en databas.
+Utöver GET- och POST-requests finns det även andra HTTP-metoder som PUT och DELETE, vilka används för att uppdatera eller ta bort data på servern. Dessa metoder kan vara användbara för att utföra CRUD-operationer (Create, Read, Update, Delete) mot en databas eller annan lagringsplats.
 
 _Källa: Föreläsning den 9 november 2022 av Sebastian Lindgren_
 _Källa: https://kinsta.com/knowledgebase/javascript-http-request/_

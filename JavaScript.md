@@ -156,7 +156,34 @@ _Källa: Föreläsning den 9 november 2022 av Sebastian Lindgren_
 _Källa: https://kinsta.com/knowledgebase/javascript-http-request/_
 
 ## JS 1.7 Lexical scope
-Beskriv rubriken här
+"Lexical" refererar till definitionen av saker och "scope" refererar till innebörden av område, utrymme eller region.
+
+Lexical scope är ett koncept inom JavaScript som avgör hur variabler hanteras när ett program körs. Det definierar vilka delar av koden som har åtkomst till olika variabler och var dessa variabler är tillgänliga.
+
+I Lexical scope avgörs variabelåtkomsten baserat på var en variabel är deklarerad i källkoden. Det innebär att variabler som deklareras inuti en funktion är tillgängliga inom den funktionen och alla dess inre funktioner, men inte utanför dem. Det innebär att Lexical scope bildar en hierarki av scopes där inre funktioner har åtkomst till variabler i sina omslutande funktioner.
+
+En viktig aspekt av detta är att åtkomsten till en variabel bestäms när den deklareras och inte när programmet körs (exekveringstid). Det innebär att när en funktion skapas, så skapas även dess scope med alla variabler som är tillgängliga för den. Detta gäller även om funktionen i sig senare körs på en annan plats. Funktionen behåller då variabler som deklarerats i dess ursprungliga scope.
+
+Ett scope kan se ut på följande sätt:
+
+function outer() {
+    const x = 10;
+
+    function inner() {
+        const y = 20;
+        console.log(x + y); // Skriver ut 30
+    }
+
+    inner();
+}
+
+outer();
+
+I den yttre funktionen har vi deklarerat variabeln "x" och i den inre funktionen deklarerar vi variabeln "y". **Den inre funktionen har åtkomst till både x och y då eftersom de ligger inom den yttre funktionens scope. Medan den yttre funktionen endast har åtkomst till x.**
+
+
+
+_Källa: https://www.freecodecamp.org/news/javascript-lexical-scope-tutorial/_
 
 ## JS 1.8 Event handling
 Beskriv rubriken här

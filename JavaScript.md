@@ -132,7 +132,26 @@ _Källa: Föreläsning den 7 november 2022 av Sebastian Lindgren_
 Källa: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents
 
 ## JS 1.6 HTTP-requests
-Beskriv rubriken här
+Inom JavaScript används HTTP-requests för att kommunicera med webbservern samt att hämta eller skicka data till servern. HTTP-requests möjliggör interaktion med API:er, datahantering och uppdatering av webbsidor i realtid.
+
+För att göra ett HTTP-request i JavaScript finns olika metoder. Den vanligaste metoden för detta är "fetch()"-funktionen.
+
+**Här är ett exempel på en HTTP GET-request med fetch()**
+![Kod exempel](./Pictures-JavaScript/exempelFetch.jpg)
+
+I exemplet används "fetch()" för att göra en GET-request till "https://api.example.com/data". Därefter används ".then()" för att hantera det svar som returneras från servern, eller "catch()" för att hantera eventuella fel som returnerats från servern.
+
+HTTP-requests kan också användas för att skicka data till servern, t.ex. genom att använda en HTTP-POST-request.
+
+**POST exempel**
+![Kod exempel](./Pictures-JavaScript/exempelPost.jpg)
+
+I exemplet ovan skickas data i JSON-format till "https://api.example.com/users" genom en POST-request. "JSON.stringify()" används för att konvertera dataobjektet till en JSON-string. Vi använder även "headers" för att specificera innehållets typ och metod vilket tydliggör att det handlar om en POST-request.
+
+Det finns ytterligare HTTP-request som t.ex. PUT och DELETE som kan användas för att skicka ett request för att ut föra någon form av CRUD-funktion mot en databas.
+
+_Källa: Föreläsning den 9 november 2022 av Sebastian Lindgren_
+_Källa: https://kinsta.com/knowledgebase/javascript-http-request/_
 
 ## JS 1.7 Lexical scope
 Beskriv rubriken här

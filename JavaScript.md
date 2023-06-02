@@ -260,10 +260,102 @@ Det finns två huvudsakliga koncept inom prototype inheritance:
 _Källa: Föreläsning den 31 oktober 2022 av Sebastian Lindgren_
 
 ## JS 1.10 Higher-order functions
-Beskriv rubriken här
+I JavaScript kan funktioner tilldelas till variabler på samma sätt som t.ex. en string eller en array. Detta möjliggör att de kan skickas in i andra funktioner som parametrar (eller returneras av en funktion). En "higher-order function" är en funktion som godtar en funktion som parameter, eller returnerar en funktion.
+
+Det finns flera olika typer av higher-order functions som t.ex. map() och reduce().
+
+**Hur fungerar en higher-order function**
+Låt oss säga att vi vill skapa en funktion som räknar ut arean och diametern på en cirkel.
+
+För att lösa detta med en higher-order function kan ma göra på följande sätt:
+
+**Exempel**
+```
+const radius = [1, 2, 3];
+
+// Logik för att räkna ut area
+
+const area = function(radius) {
+    return Math.PI * radius * radius;
+}
+
+// Logik för att räkna ut diameter
+
+const diameter = function(radius) {
+    return 2 * radius;
+}
+
+// En återanvändbar funktion som räknar ut area, diameter etc...
+
+const calculate = function(radius, logic) {
+    const output = [];
+    for (let i = 0; i < radius.length; i++) {
+        output.push(logic(radius[i]))
+    }
+    return output;
+}
+
+console.log(calculate(radius, area));
+console.log(calculate(radius, diameter));
+```
+Som framgår av exemplet ovan har vi endast skrivit en funktion, calculate() som löser problemet. Koden i exemplet använder en higher-order function som är kortfattad och modulär. Varje funktion löser sin uppgift och vi håller koden DRY.
+
+Om vi i detta scenario skulle vilja göra en funktion som räknarut omkretsen på en cirkel så skulle vi kunna skriva logiken och skicka in den i vår calculate() funktion. Därmed är calculate() återanvändbar.
+
+Higher-order function kan användas på en mängd olika sätt.
+
+När man jobbar med arrays kan man använda sig av map(), reduce(), filter() och sort() för att manipulera och omvandla data i en array.
+
+När man jobbar med objekt kan man använda Object.entries() funktionen för att skapa en ny array av ett objekt.
+
+När man jobbar med funktioner kan man använda compose() funktionen för att skapa mer komplexa funktioner av enklare funktioner.
+
+_Källa: https://www.freecodecamp.org/news/higher-order-functions-in-javascript-explained/_
 
 ## JS 1.11 Single-thread programming
-Beskriv rubriken här
+JavaScript är ett "Single-threaded" programmeringsspråk, vilket innebär att endast en rad kod kan köras åt gången. Att JavaScript är ett single-threaded språk beror på att det tidigare endast var ett scriptspråk för webbläsare som togs fram för att hantera en enskild användare med ett enskilt fönster i en webbläsare, vilket innebar att det inte fanns behov av "multi-treading".
+
+I praktiken innebär detta att med JavaScript-kod körs en instruktion i taget, och när instruktionen är klar går programmet vidare till nästa instruktion. Detta sker i en linjär ordning, från början till slut, och ingen annan kod kan exekveras samtidigt.
+
+**Problem**
+Då JavaScript är single-threaded kan bara en sak hända åt gången. Om en instruktion tar lång tid att köra, till exempel en tung beräkning eller en långvarig nätverksbegäran, kommer det att blockera resten av koden från att exekveras under den tiden. Detta kan leda till en upplevd "frysning" av webbläsaren eller att användargränssnittet inte svarar.
+
+**Asynkron programmering**
+För att hantera detta och förhindra blockering kan JavaScript använda tekniker som asynkron programmering och använda callbacks, promises eller async/await för att schemalägga och hantera icke-blockerande operationer. Detta möjliggör att andra instruktioner kan fortsätta att exekveras medan en långvarig operation pågår, och resultatet av den operationen kan hanteras senare när det är klart.
+
+Ett exempel på när detta skulle kunna användas är när man ska hämta något från ett API. Då skapar man en så kallad asynkron funktion, vilket kan se ut på följande sätt:
+
+**Exempel**
+```
+// Async function
+
+const myFetch = async () => {
+    try {
+        const URL = 'https://api.example.com/data';
+
+        const response = await fetch(URL);
+        
+        // Felhantering
+
+        if (!response.ok) {
+            throw new Error('Hämtning misslyckades');
+        }
+        const data = await response.json();
+        
+        // Gör något med datan
+
+        return data;
+    } catch (error) {
+        console.log(error);
+        
+        // Hantera felet på ett lämpligt sätt
+    }
+}
+```
+
+I exemplet ovan skulle funktionen myFetch pausas vid await och därmed inte blockera programmet som kan fortsätta exekvera resterande kod medan myFetch väntar på att bli fullfilled eller rejected.
+
+_Källa: https://medium.com/swlh/what-does-it-mean-by-javascript-is-single-threaded-language-f4130645d8a9_
 
 ## JS 1.12 OAuth från frontend
 Beskriv rubriken här

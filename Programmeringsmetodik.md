@@ -51,10 +51,25 @@ __När man arbetar i grupp med större projekt kan det vara bra att ha en strate
 _Källa: https://git-scm.com/book/sv/v2/Kom-ig%C3%A5ng-Om-versionshantering_
 
 ## PG 1.2 Benchmarking
-Beskriv rubriken här
+**Affärsmässigt**
+
+Benchmarking inom handel är en process för att mäta prestanda för ett företags produkter, tjänster eller processer mot de från ett annat företag som anses vara bäst i branchen. Poängen med detta är att identifiera interna förbättringsmöjligheter.
+
+Genom att studera en produkt som levererar överlägsen prestanda och analysera vad händer för att uppnå detta, så kan man jämföra dessa processer med hur ens egen produkt är uppbyggd och fungerar och på så sätt förstå vilka förbättringar man behöver implementera som kan resultera i betydande förbättringar.
+
+Det kan t.ex. innebära att man justerar en applikations funktioner för att bättre matcha en konkurrerande produkts prestanda. Det kan även betyda att man ändrar omfattningen av tjänster som är kopplade till applikationen och logistiken runt denna.
+
+**Inom programmering**
+Inom programmering kan benchmarking beskrivas som en process som har för avsikt att mäta prestandan av ett system, en algoritm eller hårdvara. Det involverar att genomföra tester eller experiment för att samla data om olika mått, så som exekveringstid, hur mycket minne som används, hur mycket processorkraft som går åt eller andra prestandaorienterade faktorer.
+
+Målet med benchmarking inom programmering är således (precis som ovan) att jämföra och förbättra. Mätningarna kan användas för att jämföra olika implementeringar, konfigurationer eller optimeringar. Genom att analysera benchmarkingresultaten kan utvecklare identifiera flaskhalsar, optimera kod, finjustera systemkonfigurationer eller fatta välgrundade beslut om att välja den mest effektiva lösningen.
+
+Benchmarking är ett viktigt verktyg inom programmering eftersom det tillåter utvecklare att fatta välgrundade beslut, vilket i sin tur leder till mer effektiva lösningar.
+
+_Källa: https://www.shopify.com/blog/what-is-benchmarking_
 
 ## PG 1.3 Testdriven utveckling
-Beskriv rubriken här
+
 
 ## PG 1.4 Deploy och staging
 Beskriv rubriken här

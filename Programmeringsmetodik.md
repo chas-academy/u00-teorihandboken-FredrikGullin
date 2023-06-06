@@ -52,7 +52,6 @@ _Källa: https://git-scm.com/book/sv/v2/Kom-ig%C3%A5ng-Om-versionshantering_
 
 ## PG 1.2 Benchmarking
 **Affärsmässigt**
-
 Benchmarking inom handel är en process för att mäta prestanda för ett företags produkter, tjänster eller processer mot de från ett annat företag som anses vara bäst i branchen. Poängen med detta är att identifiera interna förbättringsmöjligheter.
 
 Genom att studera en produkt som levererar överlägsen prestanda och analysera vad händer för att uppnå detta, så kan man jämföra dessa processer med hur ens egen produkt är uppbyggd och fungerar och på så sätt förstå vilka förbättringar man behöver implementera som kan resultera i betydande förbättringar.
@@ -69,7 +68,29 @@ Benchmarking är ett viktigt verktyg inom programmering eftersom det tillåter u
 _Källa: https://www.shopify.com/blog/what-is-benchmarking_
 
 ## PG 1.3 Testdriven utveckling
+Testdriven utveckling (även känt som TDD) är ett tillvägagångssätt inom mjukvaruutveckling där tester tas fram för att specificera och validera vad koden kommer att göra. Enkelt uttryckt skapas och testas olika scenarion för varje funktionalitet. Om koden inte klarar testet skrivs den om för att klara testet och för att göra koden enkel och buggfri.
 
+Testdriven utveckling börjar med att man först skapar tester för varje liten funktionalitet i en applikation. TDD-ramverken instruerar utvecklare att skriva ny kod endast om ett automatiserat test har misslyckats. Detta bidrar till att hålla koden "DRY", med andra ord, att undvika upprepningar.
+
+Det enkla konceptet med testdriven utveckling är att skriva och korrigera de misslyckade testerna innan man skriver ny kod (det vill säga före själva utvecklingsfasen). Detta bidrar till att undvika duplicering av kod eftersom man skriver en liten mängd kod åt gången för att klara de tester man tagit fram. _Tester är egentligen inget annat än krav och villkor som måste testas för att säkerställa att de uppfylls._
+
+**Hur går ett TDD-test till?**
+Följande steg visa hur man utför ett TDD-test:
+
+1. Ta fram / lägg till ett eller flera test
+2. Kör alla tester och se om något misslyckas
+3. Skriv ny kod
+4. Kör tester på nytt och korrigera koden
+5. uppreapa tills önskat resultat har uppnåtts
+
+![Kod exempel](./pictures-Programmeringsmetodik/TDD-testProcess.jpg)
+
+**Några förtydliganden om TDD**
+* TDD-metoden handlar varken om "testning" eller "design"
+* TDD betyder inte "skriv några av testerna och bygg sedan ett system som klarar testerna"
+* TDD betyder inte "gör massor av tester"
+
+_Källa: https://www.guru99.com/test-driven-development.html_
 
 ## PG 1.4 Deploy och staging
 Beskriv rubriken här

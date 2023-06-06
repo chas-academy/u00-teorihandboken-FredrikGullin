@@ -358,8 +358,59 @@ I exemplet ovan skulle funktionen myFetch pausas vid await och därmed inte bloc
 _Källa: https://medium.com/swlh/what-does-it-mean-by-javascript-is-single-threaded-language-f4130645d8a9_
 
 ## JS 1.12 OAuth från frontend
-Beskriv rubriken här
+OAuth står för "Open Authorization" och är ett öppet standard protokoll som möjliggör tilldelande av rättigheter till användare så att det kan komma åt resurser på servern (eng. "resource server").
+
+Inom webbutveckling används OAuth vanligtvis för att möjliggöra autentisering och auktorisering mellan en frontend applikation (client) och ett backend API (resource server).
+
+* **Autentisering** - (eng. Authentication) är en process för att avgöra huruvida någon är den de utger sig för att vara
+* **Auktorisering** - (eng. Authorization) är en process för att avgöra vad en autentiserad entitet har rättigheter till att göra
+
+I ett mindre system skulle detta kunna fungera genom att man i backend har en lista med användare som innehar en specifik "roll" som t.ex. "användare", "admin" eller "superadmin". Användarens tilldelade roll kan därefter tilldelas olika grad av rättigheter som ger åtkomst till olika nivåer av vad som kan göra i t.ex. backend / serversidan eller en databas. Vanligast är dock att man har ett booleanskt värde som visar om en avnändare är "admin" eller inte.
+
+Ett av de säkrare sätten att göra detta är genom att använda _OAuth2_. Som innebär att man låter någon typ av tredjeparts system utföra autentiseringen och auktoriseringen. Det finns olika implemmenteringar av inlogning och genom att använda t.ex. ett större företag som sin OAuth partner, som t.ex. Google eller Facebook är att det blir väldigt säkert. Detta då dessa företag investerat åtskilliga miljarder dollar för att se till att deras servrar håller högsta möjliga säkerhet. Detta är därför den främsta fördelen med att använda OAuth2 / tredjeparts system (third party Auth providers). Nackdelen är att det vid en större mängd inloggningar per månad (+50 000 aktiva användare) kan medföra kostnader. Kostnaderna är dock relativt låga.
+
+OAuth kan kopplas i enbart frontend, enbart backend eller någon kombination. När man endast kopplar OAuth i enbart frontend så behöver applikationen inte spara saker i backend. Användarens uppgifter som lösenord etc är sparade på Googles eller Facebooks server / i deras databas. Därefter kan man genom auktorisering och OAuth (scope) ge rättigheter för användaren visa t.ex. status meddelanden från Facebook.
+
+De skyddade användaruppgifterna lagras således på resursservern. Där sker även auktorisering och verifiering av användarens identitet. Därefter tilldelas applikationen med så kallade access tokens.
+
+
+_Från perspektivet som utvecklare är det API:et som representerar båda dessa roller._
+
+**Funktionalitet**
+Hur OAuth fungerar kan enkelt beskrivas med nedanstående bild.
+
+![Kod exempel](./Pictures-JavaScript/AbstraktProtokollOAuth.jpg)
+
+**Säkerhet**
+Det hittills absolut säkraste sättet att göra detta är att anvädnda en "backend for frontend" lösning där en backend gör OAuth-calls och returnerar en cookie med ett bearer-token. Man ser även till att det inte finns någon åtkomst till applikationens API från frontend utan att detta sköts helt via backend. Detta är säkrare då detta mellansteg minimerar risken för att en användare injekterar JavaScript i frontend i t.ex. en post för att komma åt andra användares inloggingsuppgiter. Genom att sköta allt det här på server-sidan är detta inte möjligt då det läggs på lager av säkerhet som avväpnar ett JavaSCript genom "strip tags" eller "@CSRF". Man kan bygga sin applikation så alla anrop till OAuth med mera kommer ligga på server samt att servern inte går att "läsa" utifrån.
+
+![Kod exempel](./Pictures-JavaScript/FrontendForBackend.jpg)
+
+En nackdel med detta är att det är långsammare.
+
+_Källa: Föreläsning den 22 maj 2023 av Sebastian Lindgren_
 
 ## JS 1.13 Websockets
-Beskriv rubriken här
+Websockets möjliggör en tvåvägsförbindelse mellan klient (vanligtvis en webbläsare) och server, en kontinuerlig koppling som pågår tills den stängs av. Det bästa med websockets är att det erbjuder en möjlighet att skicka information omedelbart mellan klient och server.
 
+Till skillnad från traditionella HTTP-requests som kräver att klienten initierar kommunikationen med servern för varje request, tillåter websockets en kontinuerlig, interaktiv kommunikation mellan klienten och servern.
+
+Websockets erbjuder ett flertal fördela för webbutvecklare:
+
+1. Real-time updates: Websockets möjliggör omedelbara uppdateringar i realtid från servern utan att klienten behöver skicka upprepade requests. Detta är framförallt en fördel när man utvecklar applikationer som kräver realtids uppdateringar som t.ex. ett chatprogram, verktyg som används vid handel på börsen, verktyg för att sammarbeta i t.ex. ett dokument eller realtids gaming.
+
+2. Effektivitet: Websockets minskar omkostnaderna för HTTP-förfrågningar. När den första anslutningen upprättats kan efterförljande meddelanden skickas fram och tillbaka mellan klient och server utan behov av upprepade HTTP-requests. Detta ger lägre latens och minskad nätverkstrafik.
+
+3. Tvåvägskommunikation - Websockets stödjer tvåvägskommunikation, vilket tillåter både klienten och servern att skicka meddelanden mellan varandra när som helt så länge uppkopplingen är upprättad. Detta möjliggör interaktiva egenskaper då servern kan "pusha" uppdateringar till klienten och klienten kan trigga olika events på servern utan att skicka ett request.
+
+4. Kompatibilitet: Websockets har en bred kompatibilitet och fungerar på de flesta webläsarna, vilket leder till ett pålitligt val när man vill implementera realtids funktionalitet i en webb-applikation.
+
+För att använda websockets som webb-utvecklare brukar man vanligtvis använda ett websocket-API på klientsidan och implementerar websocket-hantering på serversidan. Klienten upprättar en websocket-anslutning genom att skicka en uppdateringsbegäran till servern, och vid lyckad anslutning kan klienten och servern utbyta meddelanden i båda riktningarna.
+
+![Kod exempel](./Pictures-JavaScript/Websockets.jpg)
+
+
+_En nackdel med detta är att man inte kan serva lika många användare samtidigt som t.ex. som man kan med vanliga HTTP-requests._
+
+_Källa: https://www.wallarm.com/what/a-simple-explanation-of-what-a-websocket-is_
+_Källa: Föreläsning den 17 maj 2023 av Sebastian Lindgren_

@@ -93,13 +93,82 @@ Följande steg visa hur man utför ett TDD-test:
 _Källa: https://www.guru99.com/test-driven-development.html_
 
 ## PG 1.4 Deploy och staging
-Beskriv rubriken här
+**Deploy**
+Programvarudistribution eller "deployment" som det också kallas inkluderar alla steg, processer och aktiviteter som krävs för att göra ett programsystem eller en uppdatering tillgänglig för dess avsedda användare. Idag distribuerar de flesta IT-organisationer och mjukvaruutvecklare programuppdateringar, patchar och nya applikationer med en kombination av manuella och automatiserade processer. Några av de viktigaste aktiviteterna för programdistribution är programutgivning, installation, testning, distribution och prestandaövervakning.
+
+**Kortfattat**
+* Deployment syftar till processen att få en applikation att fungera på en målenhet som t.ex. en testserver, produktionsmiljö eller en användares dator eller mobiltelefon.
+* Mjukvaruutvecklare har skapat arbetsflöden som möjliggör snabbare och mer frekvent distribution av programuppdateringar till produktionsmiljön där de kan nås av användare.
+
+Deployment är en av de viktigaste aspekterna av mjukvaruutvecklingsprocessen. Implementering är metoden som applikationer, moduler, uppdateringar och patchar levereras, av utvecklare till användare. Metoden används av utvecklare för att bygga, testa och deploya ny kod påverkar hur snabbt en produkt kan anpassas efter förändringar i kundernas preferenser eller krav.
+
+Team av utvecklare som effektiviserar denna process kan svara snabbare på kundernas efterfrågan med nya uppdateringar och leverera nya funktioner oftare för att öka kundnöjdheten, tillfredsställa användarnas behov och därmed dra fördel av ekonomiska möjligheter.
+
+_Ett exempel på en sådan metod kan vara att merga "develop" branchen till "main" branchen i git-flow._
+
+**Staging**
+Staging kan beskrivas som en kopia av din produktionsmiljö (din nuvarande live-webbsida) på en lokal / privat server. Det här är en säker plats som tillåter utvecklare att testa alla ändringar, större eller mindre, som man planerar att implementera i en säker miljö, vilket förhindrar oväntade fel i produktionsmiljön.
+
+Med andra ord är staging en miljö för att testa en webb-applikations ändringar innan de går "live" (produktion). Staging gör att vi kan härma produktionsmiljön, testa applikationen och säkra den bakom kulisserna så att kunden och utvecklarna kan granska och godkänna eventuella tillägg till applikationen. Staging är viktigt ur både en kundrelationssynpunkt och ett ingenjörsperspektiv.
+
+_Ett exempel på detta kan vara t.ex. "develop" branchen när man använder git-flow._
+
+_Källa: https://www.sumologic.com/glossary/software-deployment/_
+_Källa: https://www.commonplaces.com/blog/web-development-what-is-staging/_
 
 ## PG 1.5 Debugging
-Beskriv rubriken här
+Debugging (felsökning) är processen att lokalisera och ta bort kodningsfel i ett datorprogram / applikation. Inom informationsteknologi och teknik är ordet "bugg" en synonym till ordet "fel". Målet med debugging är att identifiera och korrigera ett fels grundorsak.
+
+Debugging är en viktig del av utvecklingsprocessen och ironiskt not kan testning för att fastställa och eliminera förekomsten av buggar ta lika mycket tid som att skriva själva koden. Felsökningsprocessen består av att hitta orsaken till ett fel och åtgärda det. Under denna process, som kan utföras manuellt eller automatiserat med verktyg, kommer utvecklarna leta efter syntaxfel, skrivfel, logiska fel och implementeringsfel.
+
+Logiska fel kan vara svåra att korrigera då det inte alltid är uppenbart vad som orsakar problemet. Detta kan därför ta lång tid att lösa.
+
+Programvaruverktyg för debugging inkluderar stöd för mjukvaruutvecklingskit (SDK) för specifika programmeringsspråk, varningsfunktioner och användargränssnitt (dashboard) som möjliggör för utvecklare att gå på djupet för att reda ut orsakerna till specifika fel.
+
+VS-code har en inbyggd debugger där utvecklare t.ex. kan undersöka exakt vad som händer, rad för rad, vid exekvering. Detta kan bland annat hjälpa till att hitta orsaken till ett logiskt fel.
+
+_Källa: https://www.techopedia.com/definition/16373/debugging_
 
 ## PG 1.6 Dokumentation
-Beskriv rubriken här
+All skriven text, illustrationer eller video som beskriver ett program eller en applikation kan ses som dokumentation för / till programvaran i fråga, ett så kallat programvarudokument.
+
+Användare av dokumentationen kan vara vem som helst, från programmerare, systemanalytiker eller administratör till slutanvändare. Vid olika utvecklingsstadier kan flera dokument skapas för olika användare. Faktum är att dokumentationen av programvaran / applikationen är en mycket väsentlig del av applikationens övergripande utvecklingsprocess.
+
+I modulär programmering blir dokumentation ännu viktigare eftersom olika moduler av programvaran utvecklas av olika team. Om någon annan än de som ingår i utvecklingsteamet behöver förstå hur en modul är uppbyggd, kommer bra och detaljerad dokumentation att underlätta enormt.
+
+**Riktlinjer**
+Detta är några riktlinjer för att skriva bra dokumentation:
+
+* Dokumentation bör utgå från läsarens perspektiv
+* Dokumentation ska vara konsekvent och entydig
+* Dokumentation bör inte innehålla upprepningar
+* Man bör använda sig utav branchstandarder när man skriver dokumentation
+* Dokumentationen bör alltid uppdateras vid eventuella förändringar
+* Alla inaktuella dokument bör fasas ut efter vederbörlig registrering av utfasning
+
+**Fördelar med dokumentation**
+Detta är några fördelar med dokumentation:
+
+1. Dokumentation håller reda alla delar av ett program eller en applikation
+2. Det är lättare att underhålla en applikation som är väldokumenterad
+3. Andra programmerare än själva utvecklaren kan förstå alla aspekter av applikationen
+4. Dokumentation förbättrar den övergripande kvalitén på applikationen
+5. Hjälper användarna av applikationen
+6. Säkerställer kunskapsdecentralisering, minskar kostnader och ansträngningar om användare / utvecklare plötsligt lämnar systemet
+
+**Typer av dokumentation**
+Här följer några förslag på typer av dokumentation:
+
+* En README.md - kan innehålla information om hur applikationen används, mål och syfte och information till utvecklare som eventuellt ska jobba vidare med applikationen.
+* Användarmanual - innehåller beskrivning om hur appen används av slutanvändarna.
+* Operationsmanual - listar och beskriver alla operationer som utförs och deras inbördes beroenden.
+* Designdokument - ger en översikt över applikationen och beskriver designelement i detalj.
+* Kravspecifikation - listar alla krav i ställts för applikationen samt en analys av genomförbarhet.
+* Teknisk dokumentation - dokumentation av faktiska programmeringskomponenter som algoritmer, flödesscheman, programkoder, funktionsmoduler etc.
+
+_Även välkommenterad kod kan vara nyttigt._
+
+Källa: https://www.tutorialspoint.com/programming_methodologies/programming_methodologies_program_documentation.htm
 
 ## PG 1.7 Struktur av kod i projekt
 Beskriv rubriken här

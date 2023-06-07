@@ -171,10 +171,17 @@ _Även välkommenterad kod kan vara nyttigt._
 Källa: https://www.tutorialspoint.com/programming_methodologies/programming_methodologies_program_documentation.htm
 
 ## PG 1.7 Struktur av kod i projekt
-Beskriv rubriken här
+I praktiska termer betyder "struktur" att man strävar efter att hålla en ren kod där logiken är tydlig och där även mappar och filer är välorganiserade inom projektets filsystem. När vi diskuterar "struktur" syftar vi på de beslut som fattas för att bäst uppnå målet med projektet. Det handlar om att noggrant överväga hur man kan dra nytta av språkets funktioner för att skriva kod som är både ren och effektiv. Konkret innebär "struktur" att skapa kod där logiken och beroendena är tydliga, samtidigt som filer och mappar är ordnade på ett sätt som främjar överskådlighet och effektivitet inom filsystemet.
+
+Genom att besvara frågor som vilka funktioner som bör finnas i vilka moduler, hur data ska flöda genom projektet, och vilka egenskaper och funktioner som kan grupperas och isoleras, kan man påbörja planeringen av hur den färdiga produkten kommer att se ut. Genom att ha en tydlig struktur i projektet blir det lättare att navigera, underhålla och vidareutveckla koden. Dessutom bidrar en välorganiserad struktur till ökad samarbetsförmåga inom utvecklingsteamet och effektivare hantering av projektet som helhet.
+
+**Varför är struktur viktigt?**
+Struktur är viktig inom programmering av flera anledningar. För det första hjälper det till att skapa en ren och tydlig kodbas som är lätt att förstå och underhålla. En välstrukturerad kod gör det också enklare att återanvända och testa olika delar av koden separat. Struktur underlättar också samarbete inom utvecklingsteam genom att främja en enhetlig kodstil och organisering av projektet. Dessutom bidrar struktur till skalbarhet, vilket innebär att koden kan växa och utvecklas utan att förlora översikt eller bli svårhanterlig. En bra struktur hjälper även till att minimera fel och underlätta felsökning genom att göra det lättare att lokalisera och isolera problemområden. Sammantaget främjar struktur i programmeringsefterlevnad, effektivitet och underlättar hållbarheten och framgången hos ett projekt.
+
+_Källa: https://docs.python-guide.org/writing/structure/_
 
 ## PG 1.8 Automatisering av arbetsflöde
-Beskriv rubriken här
+
 
 ## PG 1.9 Virtualisering av utvecklingsmiljö
 Beskriv rubriken här

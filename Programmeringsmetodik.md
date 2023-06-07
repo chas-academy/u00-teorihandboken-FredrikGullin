@@ -181,14 +181,58 @@ Struktur är viktig inom programmering av flera anledningar. För det första hj
 _Källa: https://docs.python-guide.org/writing/structure/_
 
 ## PG 1.8 Automatisering av arbetsflöde
+Arbetsflödesautomatisering är en metod där programvara används för att slutföra uppgifter och aktiviteter utan behov av manuell inmatning eller interaktion från människor. Det är ett kraftfullt verktyg som syftar till att göra arbete snabbare, enklare och mer konsekvent genom att ta över repetitiva och tidskrävande processer.
 
+Genom att automatisera arbetsflöden kan företag effektivisera sina verksamheter och frigöra tid och resurser för mer värdeskapande arbetsuppgifter. Genom att identifiera rutinmässiga och standardiserade uppgifter inom en organisation kan man utforma automatiserade processer för att hantera dem. Det kan vara allt från att automatisera datainmatning och filhantering till att schemalägga och distribuera rapporter eller att automatiskt skicka påminnelser och notifieringar.
+
+En viktig aspekt av arbetsflödesautomatisering är att det minskar risken för mänskliga fel och ökar konsekvensen och noggrannheten i utförandet av arbetsuppgifter. Genom att använda regelbaserade eller logikbaserade automatiseringsverktyg kan man säkerställa att arbetsflöden följer fördefinierade regler och riktlinjer. Detta minskar risken för missförstånd eller glömska som kan uppstå vid manuell hantering.
+
+Arbetsflödesautomatisering kan också bidra till bättre samarbete och kommunikation inom en organisation. Genom att automatisera processer kan olika avdelningar och team enkelt dela information och samarbeta i realtid. Till exempel kan en automatiserad arbetsflöde hantera och flytta data mellan olika system eller plattformar, vilket möjliggör sömlös integration och informationsutbyte.
+
+Det är viktigt att notera att arbetsflödesautomatisering inte syftar till att ersätta människor, utan snarare att befria dem från repetitiva och tidskrävande uppgifter. Det frigör tid och energi som kan användas för mer kreativa och strategiska uppgifter som kräver mänskligt omdöme och beslutsfattande.
+
+_Källa: https://www.pipefy.com/blog/what-is-workflow-automation/_
 
 ## PG 1.9 Virtualisering av utvecklingsmiljö
-Beskriv rubriken här
+Virtualisering innebär möjligheten att skapa flera virtuella maskiner på en enda värddator. Virtualisering har blivit alltmer vanligt inom företag, tack vare utvecklare som tyst använt tekniken i utvecklings- och testprocesser och sedan introducerat VM-konceptet till sina IT-avdelningar.
+Virtualisering kan användas i olika miljöer och fungerar på olika sätt beroende på situationen. I den här artikeln ger vi en översikt av virtualiseringskonceptet och förklarar några av dess fördelar som kan gynna din organisation.
+
+**Virtuell utvecklingsmiljö**
+Att göra en utvecklingsmiljö till en virtuell miljö innebär att skapa virtualiserade utvecklingsmiljöer där virtuella maskiner används för utveckling och testning av webbplatser och verktyg. Detta ger flera fördelar och löser utmaningar som uppstår vid utveckling av nya projekt.
+
+**Vilka fördelar finns med virtualisering?**
+Genom virtualisering kan utvecklare och testare skapa stabila och effektiva utvecklingsmiljöer. Genom att använda virtuella maskiner kan olika versioner av programvara och potentiella produktimplementeringar testas, liksom nya funktioner. Detta möjliggör en nära efterlikning av en produktionsservermiljö, vilket sparar tid och resurser som annars skulle behövas för att konfigurera och underhålla en ingenjörs utvecklingsmiljö.
+
+En annan fördel med virtualisering är möjligheten att köra automatiska funktionstester för webbplatser och verktyg. Genom att använda virtuella maskiner kan man köra flera webbläsare och automatisera testning av komplexa formulär och användargränssnittselement. Detta gör det möjligt att testa olika webbläsare och skärmupplösningar utan att behöva spendera mycket tid på installationsprocessen.
+
+Virtualisering av utvecklingsmiljön möjliggör också testning av nya versioner av databasservrar, applikationskodscachning, ramuppdateringar och andra ändringar som kan göras på produktionsservern. Dessutom ger det utvecklare friheten att använda sina föredragna operativsystem och arbetsredaktörer, vilket ökar produktiviteten och arbetskomforten.
+
+_Källa: https://www.zendev.se/blog/virtualization-software-development_
 
 ## PG 1.10 Bundeling-verktyg
-Beskriv rubriken här
+Bundling innebär att kombinera dina beroenden till en enda optimerad fil. Genom att kompilera koden gör man den tillgänglig för analys av webbläsare. Bundling hjälper till att lösa programberoendediagrammet och minskar antalet filer.
+
+Utvecklare organiserar en applikation genom att dela upp den i moduler, komponenter och funktioner, vilka kan användas för att bygga upp olika delar av applikationen. Detta resulterar i en hierarkisk struktur och en viktig del av detta är att exportera och importera dessa interna moduler samt externa tredjepartspaket. Genom att göra detta skapas en komplex nätverk av filberoenden som sammanlänkar olika delar av applikationen.
+
+Bundling är en process där filernas beroenden blir upplösta och filerna (eller modulerna) kombineras till optimerade paket för webbläsaren. Målet är att minska antalet filförfrågningar när en användare besöker en webbsida. Genom att slå samman filer till färre och mer effektiva paket kan webbsidan laddas snabbare och mer effektivt. Detta görs genom att identifiera och inkludera alla nödvändiga filer och resurser i en enda fil eller ett fåtal filer, vilket minskar den tid som krävs för att hämta och ladda ner dessa filer separat. Bundling är ett viktigt steg för att optimera prestanda och förbättra användarupplevelsen på webbsidor genom att minska overhead och fördröjningar vid överföring av data.
+
+![Kod exempel](./pictures-Programmeringsmetodik/Bundling.jpg)
+
+_Källa: https://nextjs.org/learn/foundations/how-nextjs-works/bundling_
 
 ## PG 1.11 Terminalinterface
-Beskriv rubriken här
+
+**Vad är en terminal?**
+En terminal är en användargränssnittsmiljö som möjliggör textbaserad inmatning och utmatning på en dator. Det fungerar som en interaktiv plats där användaren kan skriva in kommandon och instruktioner som sedan utförs av datorn. Terminalen agerar som ett mellanlager mellan användaren och operativsystemet genom att tolka och vidarebefordra de angivna kommandona till rätt delar av systemet för utförande. Genom terminalen kan användaren navigera genom filsystemet, starta program, hantera filer och utföra olika administrativa och utvecklingsuppgifter. Terminalen erbjuder också möjligheter till automation genom att skapa skript och kommandokedjor för att automatisera uppgifter. Den ger användaren en mer direkt och kontrollerad åtkomst till datorns resurser och fungerar som en kraftfull verktygslåda för avancerade användare och utvecklare.
+
+**Vad är CLI**
+CLI, eller Command Line Interface, har flera fördelar inom programmering. För det första erbjuder det effektivitet genom snabb och direkt interaktion med datorsystemet genom att skriva kommandon istället för att navigera genom en grafisk användargränssnitt. Det sparar tid och möjliggör snabb utförande av uppgifter.
+
+För det andra möjliggör CLI automatisering genom att skapa skript och kommandokedjor. Detta sparar tid och minskar risken för fel genom att repetitiva uppgifter kan automatiseras.
+
+Dessutom ger CLI flexibilitet och kraft till användaren. Det tillåter utförande av avancerade och specialiserade uppgifter genom att skriva och exekvera specifika kommandon. Användare kan anpassa och optimera systemet enligt behov samt använda skriptspråk och kommandoskalor för att bygga kraftfulla automatiseringslösningar.
+
+En annan fördel är reproducerbarhet och dokumentation. Genom att använda CLI kan kommandon och instruktioner sparas i skriptfiler eller dokumenteras för att säkerställa reproducerbarhet och möjliggöra delning av arbetsflöden och kommandon inom teamet.
+
+_Källa: https://www.freecodecamp.org/news/command-line-for-beginners/_
 
